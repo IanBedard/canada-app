@@ -1,7 +1,7 @@
 import "@cdssnc/gcds-components";
 import "@cdssnc/gcds-components/dist/gcds/gcds.css";
-import { GcdsHeading, GcdsLink, GcdsContainer, GcdsText, GcdsDateModified} from "@cdssnc/gcds-components-react";
-
+import { GcdsHeading, GcdsLink, GcdsContainer, GcdsText, GcdsDateModified } from "@cdssnc/gcds-components-react";
+import DataTable from "./DataTable";
 
 export default function Content() {
   return (
@@ -36,6 +36,7 @@ export default function Content() {
       </section>
       <section id="section-1">
         <GcdsHeading tag="h2">Section 1</GcdsHeading>
+        <DataTable/>
         <GcdsText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
@@ -61,7 +62,7 @@ export default function Content() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
           egestas maecenas pharetra convallis posuere morbi leo urna.
         </GcdsText>
-      </section>åß
+      </section>
       <section id="section-3">
         <GcdsHeading tag="h2">Section 3</GcdsHeading>
         <GcdsText>
@@ -70,9 +71,9 @@ export default function Content() {
           egestas maecenas pharetra convallis posuere morbi leo urna.
         </GcdsText>
       </section>
-       <GcdsDateModified>
-       {new Date().toISOString().split('T')[0]}
-     </GcdsDateModified>
+      <GcdsDateModified>
+        {new Date().toISOString().split('T')[0]}
+      </GcdsDateModified>
     </GcdsContainer>
   );
 }
