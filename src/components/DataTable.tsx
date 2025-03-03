@@ -39,11 +39,15 @@ export default function DataTableComponent() {
 
     if (audiences.length > 0) {
       result = result.filter((row) =>
-        audiences.some((audience) => 
-          new RegExp(audience.replace(/[.*+?^${}()|\[\]\\]/g, "\\$&"), "i").test(row.audience)
+        Array.isArray(row.audience) &&
+        row.audience.some((audienceItem) =>
+          audiences.some((selectedAudience) =>
+            new RegExp(selectedAudience.replace(/[.*+?^${}()|\[\]\\]/g, "\\$&"), "i").test(audienceItem)
+          )
         )
       );
     }
+    
 
     if (month) {
       result = result.filter((row) => new Date(row.date).getMonth() + 1 === parseInt(month));
@@ -77,7 +81,9 @@ export default function DataTableComponent() {
 
   // Extract unique categories and audiences from data
   const categoryOptions = Array.from(new Set(data.map(item => item.category)));
-  const audienceOptions = Array.from(new Set(data.map(item => item.audience)));
+  const audienceOptions = Array.from(
+    new Set(data.flatMap(item => item.audience))
+  );
 
   return (
     <div className="container-fluid d-flex">
@@ -89,7 +95,8 @@ export default function DataTableComponent() {
         applyFilters={applyFilters}
         searchTerm={searchTerm}
         categoryOptions={categoryOptions}
-        audienceOptions={["Change agents", "Compensation advisors", "Timekeepers", "Section 34 managers", "Employees"]}
+        audienceOptions={audienceOptions}
+
         selectedMonth={selectedMonth}
         setSelectedMonth={setSelectedMonth}
         selectedYear={selectedYear}

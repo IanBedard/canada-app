@@ -25,22 +25,20 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
 
   return (
     <div className="d-flex justify-content-between align-items-center mb-3">
-      <div className="d-flex">
-        <input
-          type="text"
-          className="form-control me-2"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-        <button 
-          className="btn btn-outline-secondary" 
-          onClick={resetFilters}
-        >
-          Reset
-        </button>
-      </div>
-      <div>
+   <div className="d-flex w-100">
+  <div className="flex-grow-1 me-2">
+    <input
+      type="text"
+      className="form-control w-100"
+      placeholder="Search..."
+      value={searchTerm}
+      onChange={handleSearch}
+    />
+  </div>
+  <button className="btn btn-outline-secondary">Reset</button>
+</div>
+
+      {/*<div>
         <label className="me-2">Show</label>
         <select
           className="form-select d-inline w-auto"
@@ -53,7 +51,7 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
           <option value={0}>All</option>
         </select>
         <span className="ms-2">entries</span>
-      </div>
+      </div>*/}
     </div>
   );
 };
