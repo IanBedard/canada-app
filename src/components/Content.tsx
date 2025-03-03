@@ -13,64 +13,18 @@ export default function Content() {
       tag="main"
     >
       <section>
-        <GcdsHeading tag="h1">Basic page</GcdsHeading>
+        <GcdsHeading tag="h1">Technical communications</GcdsHeading>
         <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
+         Technical communications products that are available to pay system users and impacted audiences to inform about system updates, issues or actions required.
         </GcdsText>
       </section>
-      <section>
-        <GcdsHeading tag="h2">On this page</GcdsHeading>
-        <ul className="list-disc mb-300">
-          <li className="mb-75">
-            <GcdsLink href="#section-1">Section 1</GcdsLink>
-          </li>
-          <li className="mb-75">
-            <GcdsLink href="#section-2">Section 2</GcdsLink>
-          </li>
-          <li>
-            <GcdsLink href="#section-3">Section 3</GcdsLink>
-          </li>
-        </ul>
-      </section>
+
       <section id="section-1">
         <GcdsHeading tag="h2">Section 1</GcdsHeading>
         <DataTable/>
-        <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
-        </GcdsText>
-        <GcdsHeading tag="h3">Subsection heading</GcdsHeading>
-        <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
-        </GcdsText>
-        <GcdsHeading tag="h3">Subsection heading</GcdsHeading>
-        <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
-        </GcdsText>
+
       </section>
-      <section id="section-2">
-        <GcdsHeading tag="h2">Section 2</GcdsHeading>
-        <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
-        </GcdsText>
-      </section>
-      <section id="section-3">
-        <GcdsHeading tag="h2">Section 3</GcdsHeading>
-        <GcdsText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis
-          egestas maecenas pharetra convallis posuere morbi leo urna.
-        </GcdsText>
-      </section>
+     
       <GcdsDateModified>
         {new Date().toISOString().split('T')[0]}
       </GcdsDateModified>
