@@ -17,6 +17,10 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
 
   return (
     <>
+            <div className="mb-2">
+  <strong>Found {data.length} records</strong>
+</div>
+
       <table id="example" className="table table-striped table-hover w-100">
         <thead>
           <tr>

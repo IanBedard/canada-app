@@ -25,6 +25,7 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
 
   return (
     <div className="d-flex justify-content-between align-items-center mb-3">
+
    <div className="d-flex w-100">
   <div className="flex-grow-1 me-2">
     <input
