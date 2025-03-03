@@ -20,7 +20,7 @@ export default function Content() {
       </section>
 
       <section id="section-1">
-        <GcdsHeading tag="h2">Section 1</GcdsHeading>
+    
         <DataTable/>
 
       </section>
