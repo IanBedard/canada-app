@@ -1,31 +1,45 @@
-// SearchAndPagination.tsx
 import React from "react";
 
 interface SearchAndPaginationProps {
   searchTerm: string;
-  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
-  applyFilters: (search: string, filters: string[]) => void;
-  selectedFilters: string[];
+  setSearchTerm: (term: string) => void;
+  applyFilters: (search: string) => void;
   entriesPerPage: number;
-  setEntriesPerPage: React.Dispatch<React.SetStateAction<number>>;
+  setEntriesPerPage: (entries: number) => void;
+  resetFilters: () => void;
 }
 
-const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({ searchTerm, setSearchTerm, applyFilters, selectedFilters, entriesPerPage, setEntriesPerPage }) => {
+const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
+  searchTerm,
+  setSearchTerm,
+  applyFilters,
+  entriesPerPage,
+  setEntriesPerPage,
+  resetFilters,
+}) => {
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const term = event.target.value.toLowerCase();
+    const term = event.target.value;
     setSearchTerm(term);
-    applyFilters(term, selectedFilters);
+    applyFilters(term);
   };
 
   return (
     <div className="d-flex justify-content-between align-items-center mb-3">
-      <input
-        type="text"
-        className="form-control w-50"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleSearch}
-      />
+      <div className="d-flex">
+        <input
+          type="text"
+          className="form-control me-2"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+        <button 
+          className="btn btn-outline-secondary" 
+          onClick={resetFilters}
+        >
+          Reset
+        </button>
+      </div>
       <div>
         <label className="me-2">Show</label>
         <select

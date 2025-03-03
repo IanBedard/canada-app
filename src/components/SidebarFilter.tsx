@@ -1,71 +1,124 @@
-// SidebarFilter.tsx
-import React from "react";
+import { useState } from "react";
 
-type SidebarFilterProps = {
-  selectedFilters: string[];
-  setSelectedFilters: React.Dispatch<React.SetStateAction<string[]>>;
-  applyFilters: (search: string, filters: string[], month: string, year: string) => void;
+interface SidebarFilterProps {
+  selectedCategories: string[];
+  setSelectedCategories: (categories: string[]) => void;
+  selectedAudiences: string[];
+  setSelectedAudiences: (audiences: string[]) => void;
+  applyFilters: (
+    search: string, 
+    categories: string[], 
+    audiences: string[],
+    month: string, 
+    year: string
+  ) => void;
   searchTerm: string;
-  filterOptions: string[];
+  categoryOptions: string[];
+  audienceOptions: string[];
   selectedMonth: string;
-  setSelectedMonth: React.Dispatch<React.SetStateAction<string>>;
+  setSelectedMonth: (month: string) => void;
   selectedYear: string;
-  setSelectedYear: React.Dispatch<React.SetStateAction<string>>;
-  resetFilters: () => void;
-};
+  setSelectedYear: (year: string) => void;
+}
 
-const SidebarFilter: React.FC<SidebarFilterProps> = ({
-  selectedFilters,
-  setSelectedFilters,
+export default function SidebarFilter({
+  selectedCategories,
+  setSelectedCategories,
+  selectedAudiences,
+  setSelectedAudiences,
   applyFilters,
   searchTerm,
-  filterOptions,
+  categoryOptions,
+  audienceOptions,
   selectedMonth,
   setSelectedMonth,
   selectedYear,
   setSelectedYear,
-  resetFilters,
-}) => {
-  const handleFilterChange = (category: string) => {
-    setSelectedFilters((prev) => {
-      const updatedFilters = prev.includes(category)
-        ? prev.filter((s) => s !== category)
-        : [...prev, category];
-      applyFilters(searchTerm, updatedFilters, selectedMonth, selectedYear);
-      return updatedFilters;
-    });
+}: SidebarFilterProps) {
+  const handleCategoryChange = (category: string) => {
+    const updatedCategories = selectedCategories.includes(category)
+      ? selectedCategories.filter((c) => c !== category)
+      : [...selectedCategories, category];
+
+    setSelectedCategories(updatedCategories);
+    applyFilters(
+      searchTerm, 
+      updatedCategories, 
+      selectedAudiences, 
+      selectedMonth, 
+      selectedYear
+    );
+  };
+
+  const handleAudienceChange = (audience: string) => {
+    const updatedAudiences = selectedAudiences.includes(audience)
+      ? selectedAudiences.filter((a) => a !== audience)
+      : [...selectedAudiences, audience];
+
+    setSelectedAudiences(updatedAudiences);
+    applyFilters(
+      searchTerm, 
+      selectedCategories, 
+      updatedAudiences, 
+      selectedMonth, 
+      selectedYear
+    );
+  };
+
+  const handleMonthChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const month = event.target.value;
+    setSelectedMonth(month);
+    applyFilters(searchTerm, selectedCategories, selectedAudiences, month, selectedYear);
+  };
+
+  const handleYearChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const year = event.target.value;
+    setSelectedYear(year);
+    applyFilters(searchTerm, selectedCategories, selectedAudiences, selectedMonth, year);
   };
 
   return (
     <aside className="p-3 border-end" style={{ width: "250px", minHeight: "100vh" }}>
-      <h5 className="mb-3">Filter by Audience</h5>
-      {filterOptions.map((category) => (
+      <h5 className="mb-3">Filter by Category</h5>
+      {categoryOptions.map((category) => (
         <div key={category} className="form-check">
           <input
             type="checkbox"
             className="form-check-input"
-            id={category}
-            checked={selectedFilters.includes(category)}
-            onChange={() => handleFilterChange(category)}
+            id={`category-${category}`}
+            checked={selectedCategories.includes(category)}
+            onChange={() => handleCategoryChange(category)}
           />
-          <label className="form-check-label" htmlFor={category}>
+          <label className="form-check-label" htmlFor={`category-${category}`}>
             {category}
           </label>
         </div>
       ))}
-      
-      <h5 className="mt-3">Filter by Date</h5>
-      <div className="mb-2">
+
+      <h5 className="mt-4 mb-3">Filter by Audience</h5>
+      {audienceOptions.map((audience) => (
+        <div key={audience} className="form-check">
+          <input
+            type="checkbox"
+            className="form-check-input"
+            id={`audience-${audience}`}
+            checked={selectedAudiences.includes(audience)}
+            onChange={() => handleAudienceChange(audience)}
+          />
+          <label className="form-check-label" htmlFor={`audience-${audience}`}>
+            {audience}
+          </label>
+        </div>
+      ))}
+
+      <h5 className="mt-4">Filter by Date</h5>
+      <div className="mb-3">
         <label className="form-label">Month</label>
-        <select
-          className="form-select"
-          value={selectedMonth}
-          onChange={(e) => setSelectedMonth(e.target.value)}
-        >
+        <select className="form-select" value={selectedMonth} onChange={handleMonthChange}>
           <option value="">All</option>
-          {Array.from({ length: 12 }, (_, i) => (
-            <option key={i + 1} value={(i + 1).toString()}>
-              {new Date(0, i).toLocaleString("default", { month: "long" })}
+          {Array.from({ length: 12 }, (_, i) => i + 1).map((month) => (
+            <option key={month} value={month}>
+              {new Date(0, month - 1).toLocaleString("default", { month: "long" })}
             </option>
           ))}
         </select>
@@ -73,25 +126,15 @@ const SidebarFilter: React.FC<SidebarFilterProps> = ({
 
       <div className="mb-3">
         <label className="form-label">Year</label>
-        <select
-          className="form-select"
-          value={selectedYear}
-          onChange={(e) => setSelectedYear(e.target.value)}
-        >
+        <select className="form-select" value={selectedYear} onChange={handleYearChange}>
           <option value="">All</option>
-          {Array.from({ length: 10 }, (_, i) => (
-            <option key={i} value={(new Date().getFullYear() - i).toString()}>
-              {new Date().getFullYear() - i}
+          {Array.from({ length: 10 }, (_, i) => new Date().getFullYear() - i).map((year) => (
+            <option key={year} value={year.toString()}>
+              {year}
             </option>
           ))}
         </select>
       </div>
-
-      <button className="btn btn-secondary w-100 mt-3" onClick={resetFilters}>
-        Reset Filters
-      </button>
     </aside>
   );
-};
-
-export default SidebarFilter;
+}

@@ -1,4 +1,3 @@
-// DataTableComponent.tsx
 import { useState } from "react";
 import DataTable from "datatables.net-react";
 import DT from "datatables.net-bs5";
@@ -13,7 +12,8 @@ DataTable.use(DT);
 export default function DataTableComponent() {
   const [expandedRows, setExpandedRows] = useState<{ [key: number]: boolean }>({});
   const [filteredData, setFilteredData] = useState(data);
-  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedAudiences, setSelectedAudiences] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [entriesPerPage, setEntriesPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,12 +24,24 @@ export default function DataTableComponent() {
     setExpandedRows((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const applyFilters = (search: string, filters: string[], month: string, year: string) => {
+  const applyFilters = (
+    search: string, 
+    categories: string[], 
+    audiences: string[], 
+    month: string, 
+    year: string
+  ) => {
     let result = data;
 
-    if (filters.length > 0) {
+    if (categories.length > 0) {
+      result = result.filter((row) => categories.includes(row.category));
+    }
+
+    if (audiences.length > 0) {
       result = result.filter((row) =>
-        filters.some((filter) => new RegExp(filter.replace(/[.*+?^${}()|\[\]\\]/g, "\\$&"), "i").test(row.audience))
+        audiences.some((audience) => 
+          new RegExp(audience.replace(/[.*+?^${}()|\[\]\\]/g, "\\$&"), "i").test(row.audience)
+        )
       );
     }
 
@@ -44,7 +56,7 @@ export default function DataTableComponent() {
     if (search) {
       result = result.filter((row) =>
         Object.values(row).some((value) =>
-          value.toString().toLowerCase().includes(search)
+          value.toString().toLowerCase().includes(search.toLowerCase())
         )
       );
     }
@@ -54,7 +66,8 @@ export default function DataTableComponent() {
   };
 
   const resetFilters = () => {
-    setSelectedFilters([]);
+    setSelectedCategories([]);
+    setSelectedAudiences([]);
     setSearchTerm("");
     setSelectedMonth("");
     setSelectedYear("");
@@ -62,37 +75,45 @@ export default function DataTableComponent() {
     setCurrentPage(1);
   };
 
+  // Extract unique categories and audiences from data
+  const categoryOptions = Array.from(new Set(data.map(item => item.category)));
+  const audienceOptions = Array.from(new Set(data.map(item => item.audience)));
+
   return (
     <div className="container-fluid d-flex">
       <SidebarFilter 
-        selectedFilters={selectedFilters} 
-        setSelectedFilters={setSelectedFilters} 
-        applyFilters={applyFilters} 
-        searchTerm={searchTerm} 
-        filterOptions={["Change agents", "Compensation advisors", "Timekeepers", "Section 34 managers", "Employees"]} 
-        selectedMonth={selectedMonth} 
-        setSelectedMonth={setSelectedMonth} 
-        selectedYear={selectedYear} 
-        setSelectedYear={setSelectedYear} 
-        resetFilters={resetFilters}
+        selectedCategories={selectedCategories}
+        setSelectedCategories={setSelectedCategories}
+        selectedAudiences={selectedAudiences}
+        setSelectedAudiences={setSelectedAudiences}
+        applyFilters={applyFilters}
+        searchTerm={searchTerm}
+        categoryOptions={categoryOptions}
+        audienceOptions={["Change agents", "Compensation advisors", "Timekeepers", "Section 34 managers", "Employees"]}
+        selectedMonth={selectedMonth}
+        setSelectedMonth={setSelectedMonth}
+        selectedYear={selectedYear}
+        setSelectedYear={setSelectedYear}
       />
       <div className="flex-grow-1 p-3">
         <SearchAndPagination 
-          searchTerm={searchTerm} 
-          setSearchTerm={setSearchTerm} 
-          applyFilters={(search, filters) => applyFilters(search, filters, selectedMonth, selectedYear)} 
-          selectedFilters={selectedFilters} 
-          entriesPerPage={entriesPerPage} 
-          setEntriesPerPage={setEntriesPerPage} 
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          applyFilters={(search) => 
+            applyFilters(search, selectedCategories, selectedAudiences, selectedMonth, selectedYear)
+          }
+          entriesPerPage={entriesPerPage}
+          setEntriesPerPage={setEntriesPerPage}
+          resetFilters={resetFilters}
         />
         <Table 
-          data={filteredData} 
-          columns={columns} 
-          expandedRows={expandedRows} 
-          toggleRow={toggleRow} 
-          entriesPerPage={entriesPerPage} 
-          currentPage={currentPage} 
-          setCurrentPage={setCurrentPage} 
+          data={filteredData}
+          columns={columns}
+          expandedRows={expandedRows}
+          toggleRow={toggleRow}
+          entriesPerPage={entriesPerPage}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       </div>
     </div>
