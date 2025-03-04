@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.share{
+  max-width: 60px;
+  width: 60px;
+  max-height: 30px;
+}

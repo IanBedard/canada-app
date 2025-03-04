@@ -80,17 +80,17 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
         <td>
         <div className="btn-group">
           <button
-            className="btn btn-secondary btn-sm"
+            className="btn btn-secondary btn-sm share"
             onClick={() => handleShare(row)}
           >
             <i className="bi bi-share"></i> Share
           </button>
           <button
-            className={`btn btn-sm ${copiedId === row.id ? 'btn-success' : 'btn-outline-secondary'}`}
+            className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
             onClick={() => copyLink(row)}
           >
             <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
-            {copiedId === row.id ? ' Link copied' : ' Copy Link'}
+            {copiedId === row.id ? 'Copied' : 'Copy'}
           </button>
         </div>
       </td>
