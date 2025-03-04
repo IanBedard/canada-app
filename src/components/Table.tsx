@@ -9,12 +9,26 @@ interface TableProps {
   entriesPerPage: number;
   currentPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+  handleShare: (item: any) => void;
 }
 
-const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, entriesPerPage, currentPage, setCurrentPage }) => {
+const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, entriesPerPage, currentPage, setCurrentPage, handleShare }) => {
   const totalPages = Math.ceil(data.length / entriesPerPage);
   const paginatedData = entriesPerPage === 0 ? data : data.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage);
 
+  const copyLink = async (row: any) => {
+    try {
+      const baseUrl = window.location.origin + window.location.pathname;
+      const searchParams = new URLSearchParams();
+      searchParams.set('id', row.id.toString());
+      const shareableUrl = `${baseUrl}?${searchParams.toString()}`;
+      
+      await navigator.clipboard.writeText(shareableUrl);
+      alert('Link copied to clipboard!');
+    } catch (error) {
+      console.error('Error copying link:', error);
+    }
+  };
   return (
     <>
             <div className="mb-2">
@@ -22,14 +36,15 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
 </div>
 
       <table id="example" className="table table-striped table-hover w-100">
-        <thead>
-          <tr>
-            <th>Expand</th>
-            {columns.slice(0, 4).map((col, index) => (
-              <th key={index}>{col.title}</th>
-            ))}
-          </tr>
-        </thead>
+      <thead>
+  <tr>
+    <th>Expand</th>
+    {columns.slice(0, 4).map((col, index) => (
+      <th key={index}>{col.title}</th>
+    ))}
+    <th>Actions</th>  {/* Add this line */}
+  </tr>
+</thead>
         <tbody>
   {paginatedData.map((row) => (
     <React.Fragment key={row.id}>
@@ -56,10 +71,25 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
             row.audience
           )}
         </td>
+        
+        <div className="btn-group">
+        <button
+          className="btn btn-secondary btn-sm"
+          onClick={() => handleShare(row)}
+        >
+          <i className="bi bi-share"></i> Share
+        </button>
+        <button
+          className="btn btn-outline-secondary btn-sm"
+          onClick={() => copyLink(row)}
+        >
+          <i className="bi bi-link-45deg"></i> Copy Link
+        </button>
+      </div>
       </tr>
       {expandedRows[row.id] && (
         <tr className="bg-light">
-          <td colSpan={5}>
+          <td colSpan={6}>
             <div className="p-3">
               <strong>What you need to know:</strong> {row.what}
               <br />

@@ -7,7 +7,7 @@ export default function Content() {
   return (
     <GcdsContainer
       id="main-content"
-      main-container
+      main-container 
       size="xl"
       centered
       tag="main"

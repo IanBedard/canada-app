@@ -22,6 +22,10 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
     setSearchTerm(term);
     applyFilters(term);
   };
+  const handleReset = () => {
+    setSearchTerm('');  // Clear the search input
+    resetFilters();     // Call the resetFilters function from props
+  };
 
   return (
     <div className="d-flex justify-content-between align-items-center mb-3">
@@ -36,7 +40,12 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
       onChange={handleSearch}
     />
   </div>
-  <button className="btn btn-outline-secondary">Reset</button>
+  <button 
+          className="btn btn-outline-secondary"
+          onClick={handleReset}
+        >
+          Reset
+        </button>
 </div>
 
       {/*<div>
