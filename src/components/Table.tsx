@@ -1,5 +1,7 @@
 // Table.tsx
 import React, { useState } from "react";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 interface TableProps {
   data: any[];
@@ -34,6 +36,7 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
       console.error('Error copying link:', error);
     }
   };
+
   return (
     <>
             <div className="mb-2">
@@ -52,14 +55,17 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
 </thead>
         <tbody>
   {paginatedData.map((row) => (
+    
     <React.Fragment key={row.id}>
+      
       <tr>
         <td>
           <button
-            className="expand-btn btn btn-sm btn-outline-primary"
+            className="expand-btn btn btn-sm share blue"
             onClick={() => toggleRow(row.id)}
           >
-            {expandedRows[row.id] ? "−" : "+"}
+        {expandedRows[row.id] ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+
           </button>
         </td>
         <td>{row.title}</td>
