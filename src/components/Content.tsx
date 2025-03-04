@@ -19,16 +19,14 @@ export default function Content() {
          </GcdsText>
          <GcdsDetails detailsTitle="Search and filters tips">
          <GcdsText>
-         <p>The Technical Communication search function supports the use of search opperators or keywords to help expand or narrow search parameters.</p>
+         
          <p>You can use:</p>
          <ul>
-          <li>boolean operators (and, or, not) to combine multiple keywords and phrases to enhance a search query</li>
-          <li>wildcards (asterik, question mark) in place of a letter or string of letters in a search query</li>
-          <li>quotation marks (" ") to search for an exact phrase</li>
+          <li>Category Filter = ||</li>
+          <li>Audience Filter = &&</li>
+          <li>Year and Month Filters works indepedently</li>
          </ul>
-         <p>In addition, using one or more of the filter options narrows a search bu only displaying communications that meet your selections by category, audience and date.</p>
-         <p>Select the Order by menu to change how communications are displayed; by the date published (default) or by the title.</p>
-         <p>Select the Reset Search button to clear and filter options.</p>
+      
         </GcdsText>
 </GcdsDetails>
       </section>
