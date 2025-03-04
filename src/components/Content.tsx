@@ -1,6 +1,6 @@
 import "@cdssnc/gcds-components";
 import "@cdssnc/gcds-components/dist/gcds/gcds.css";
-import { GcdsHeading, GcdsLink, GcdsContainer, GcdsText, GcdsDateModified } from "@cdssnc/gcds-components-react";
+import { GcdsHeading, GcdsDetails, GcdsContainer, GcdsText, GcdsDateModified } from "@cdssnc/gcds-components-react";
 import DataTable from "./DataTable";
 
 export default function Content() {
@@ -15,19 +15,10 @@ export default function Content() {
       <section >
         <GcdsHeading tag="h1">Technical communications</GcdsHeading>
         <GcdsText>
-         Technical communications products that are available to pay system users and impacted audiences to inform about system updates, issues or actions required.
-        </GcdsText>
-      </section>
-
-      <section >
-    
-        <DataTable/>
-
-      </section>
-     <section>
-      <GcdsHeading tag="h3">Search and filters tips</GcdsHeading>
-      
-      <GcdsText>
+         Find technical communications about pay system updates, changes or issues.
+         </GcdsText>
+         <GcdsDetails detailsTitle="Search and filters tips">
+         <GcdsText>
          <p>The Technical Communication search function supports the use of search opperators or keywords to help expand or narrow search parameters.</p>
          <p>You can use:</p>
          <ul>
@@ -39,7 +30,15 @@ export default function Content() {
          <p>Select the Order by menu to change how communications are displayed; by the date published (default) or by the title.</p>
          <p>Select the Reset Search button to clear and filter options.</p>
         </GcdsText>
-     </section>
+</GcdsDetails>
+      </section>
+
+      <section >
+    
+        <DataTable/>
+
+      </section>
+   
       <GcdsDateModified>
         {new Date().toISOString().split('T')[0]}
       </GcdsDateModified>

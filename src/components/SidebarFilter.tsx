@@ -1,4 +1,8 @@
 import { useState } from "react";
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import "@cdssnc/gcds-components";
+import "@cdssnc/gcds-components/dist/gcds/gcds.css";
+import { GcdsHeading, GcdsLink, GcdsContainer, GcdsText, GcdsDateModified } from "@cdssnc/gcds-components-react";
 
 interface SidebarFilterProps {
   selectedCategories: string[];
@@ -19,6 +23,7 @@ interface SidebarFilterProps {
   setSelectedMonth: (month: string) => void;
   selectedYear: string;
   setSelectedYear: (year: string) => void;
+  resetFilters: () => void; // Add this new prop
 }
 
 export default function SidebarFilter({
@@ -34,6 +39,7 @@ export default function SidebarFilter({
   setSelectedMonth,
   selectedYear,
   setSelectedYear,
+  resetFilters,
 }: SidebarFilterProps) {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
@@ -85,6 +91,16 @@ export default function SidebarFilter({
 
   return (
     <aside className="p-3 border-end" style={{ width: "250px", minHeight: "100vh" }}>
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <GcdsHeading tag="h4"><FilterAltIcon/> Filters</GcdsHeading>
+        <button 
+          className="btn btn-outline-secondary btn-sm"
+          onClick={resetFilters}
+        >
+          <i className="bi bi-arrow-counterclockwise"></i> Reset
+        </button>
+      </div>
+      
       <div className="accordion" id="filterAccordion">
         <div className="accordion-item">
           <h2 className="accordion-header">

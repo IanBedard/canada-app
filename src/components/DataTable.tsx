@@ -157,6 +157,7 @@ export default function DataTableComponent() {
           setSelectedMonth={setSelectedMonth}
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
+          resetFilters={resetFilters}
         />
       )}
       <div className="flex-grow-1 p-3">

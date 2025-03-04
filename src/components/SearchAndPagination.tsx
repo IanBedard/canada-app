@@ -40,12 +40,7 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
       onChange={handleSearch}
     />
   </div>
-  <button 
-          className="btn btn-outline-secondary"
-          onClick={handleReset}
-        >
-          Reset
-        </button>
+
 </div>
 
       {/*<div>
