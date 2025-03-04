@@ -32,10 +32,10 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
       
       await navigator.clipboard.writeText(shareableUrl);
       setCopiedId(row.id);
-      // Reset the button after 2 seconds
+      // Reset the button after 1 seconds
       setTimeout(() => {
         setCopiedId(null);
-      }, 2000);
+      }, 1000);
     } catch (error) {
       console.error('Error copying link:', error);
     }
