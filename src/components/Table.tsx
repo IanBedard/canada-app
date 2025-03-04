@@ -1,5 +1,5 @@
 // Table.tsx
-import React from "react";
+import React, { useState } from "react";
 
 interface TableProps {
   data: any[];
@@ -15,6 +15,7 @@ interface TableProps {
 const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, entriesPerPage, currentPage, setCurrentPage, handleShare }) => {
   const totalPages = Math.ceil(data.length / entriesPerPage);
   const paginatedData = entriesPerPage === 0 ? data : data.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage);
+  const [copiedId, setCopiedId] = useState<number | null>(null);
 
   const copyLink = async (row: any) => {
     try {
@@ -24,7 +25,11 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
       const shareableUrl = `${baseUrl}?${searchParams.toString()}`;
       
       await navigator.clipboard.writeText(shareableUrl);
-      alert('Link copied to clipboard!');
+      setCopiedId(row.id);
+      // Reset the button after 2 seconds
+      setTimeout(() => {
+        setCopiedId(null);
+      }, 2000);
     } catch (error) {
       console.error('Error copying link:', error);
     }
@@ -72,20 +77,23 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
           )}
         </td>
         
+        <td>
         <div className="btn-group">
-        <button
-          className="btn btn-secondary btn-sm"
-          onClick={() => handleShare(row)}
-        >
-          <i className="bi bi-share"></i> Share
-        </button>
-        <button
-          className="btn btn-outline-secondary btn-sm"
-          onClick={() => copyLink(row)}
-        >
-          <i className="bi bi-link-45deg"></i> Copy Link
-        </button>
-      </div>
+          <button
+            className="btn btn-secondary btn-sm"
+            onClick={() => handleShare(row)}
+          >
+            <i className="bi bi-share"></i> Share
+          </button>
+          <button
+            className={`btn btn-sm ${copiedId === row.id ? 'btn-success' : 'btn-outline-secondary'}`}
+            onClick={() => copyLink(row)}
+          >
+            <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
+            {copiedId === row.id ? ' Link copied' : ' Copy Link'}
+          </button>
+        </div>
+      </td>
       </tr>
       {expandedRows[row.id] && (
         <tr className="bg-light">
