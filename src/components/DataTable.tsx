@@ -139,33 +139,7 @@ export default function DataTableComponent() {
     new Set(data.flatMap(item => item.audience))
   );
 
-  const handleShare = async (item: any) => {
-    try {
-      const baseUrl = window.location.origin + window.location.pathname;
-      const searchParams = new URLSearchParams();
-      
-      // Only include the ID for sharing specific entries
-      searchParams.set('id', item.id.toString());
-      const shareableUrl = `${baseUrl}?${searchParams.toString()}`;
-
-      const shareMessage = `View Technical Communication: ${item.title}\n` +
-        `Category: ${item.category}\n` +
-        `Date: ${item.date}`;
-
-      if (navigator.share) {
-        await navigator.share({
-          title: 'Technical Communications',
-          text: shareMessage,
-          url: shareableUrl
-        });
-      } else {
-        await navigator.clipboard.writeText(shareableUrl);
-        alert('Shareable link copied to clipboard!');
-      }
-    } catch (error) {
-      console.error('Error sharing:', error);
-    }
-  };
+ 
 
   return (
     <div className="container-fluid d-flex">
@@ -187,6 +161,7 @@ export default function DataTableComponent() {
       )}
       <div className="flex-grow-1 p-3">
         {isSingleEntryView ? (
+          <div className="container">
           <div className="mb-3">
             <button 
               className="btn btn-primary"
@@ -195,7 +170,59 @@ export default function DataTableComponent() {
               Back to full list
             </button>
           </div>
+          {filteredData.map((entry) => (
+            <div key={entry.id} className="card">
+              <div className="card-header">
+                <h4>{entry.title}</h4>
+                <div className="text-muted">
+                  {new Date(entry.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </div>
+              </div>
+              <div className="card-body">
+                <div className="mb-4">
+                  <h5>What you need to know:</h5>
+                  <p>{entry.what}</p>
+                </div>
+
+                <div className="row mb-3">
+                  <div className="col-md-6">
+                    <strong>Category:</strong> {entry.category}
+                  </div>
+                  <div className="col-md-6">
+                    <strong>Audience:</strong>{' '}
+                    {Array.isArray(entry.audience) ? entry.audience.join(', ') : entry.audience}
+                  </div>
+                </div>
+
+                <div className="mb-3">
+                  <strong>Action Required:</strong>
+                  <p>{entry.action}</p>
+                </div>
+
+                <div className="mb-3">
+                  <strong>Notes:</strong>
+                  <p>{entry.notes}</p>
+                </div>
+
+                <div className="mb-3">
+                  <strong>Resources:</strong>
+                  <p>{entry.resources}</p>
+                </div>
+
+                <div className="mb-3">
+                  <strong>Who to Contact:</strong>
+                  <p>{entry.who}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
         ) : (
+          <>
           <SearchAndPagination 
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
@@ -206,15 +233,15 @@ export default function DataTableComponent() {
             setEntriesPerPage={setEntriesPerPage}
             resetFilters={resetFilters}
           />
+          <Table 
+            data={filteredData}
+            columns={columns}
+            entriesPerPage={entriesPerPage}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </>
         )}
- <Table 
-  data={filteredData}
-  columns={columns}
-  entriesPerPage={entriesPerPage}
-  currentPage={currentPage}
-  setCurrentPage={setCurrentPage}
-  handleShare={handleShare}
-/>
       </div>
     </div>
   );

@@ -13,15 +13,15 @@ interface TableProps {
   entriesPerPage: number;
   currentPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-  handleShare: (item: any) => void;
+
 }
 
-const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPage, setCurrentPage, handleShare }) => {
+const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPage, setCurrentPage }) => {
   const totalPages = Math.ceil(data.length / entriesPerPage);
+  const [copiedId, setCopiedId] = useState<number | null>(null);
+  const [sortConfig, setSortConfig] = useState<SortConfig>({ key: 'date', direction: 'desc' });
   const [showModal, setShowModal] = useState(false);
   const [selectedRow, setSelectedRow] = useState<any>(null);
-  const [copiedId, setCopiedId] = useState<number | null>(null);
-  const [sortConfig, setSortConfig] = useState<SortConfig>({ key: '', direction: null });
 
   const copyLink = async (row: any) => {
     try {
@@ -115,7 +115,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
 </thead>
         <tbody>
           {paginatedData.map((row) => (
-            <tr onClick={() => handleRowClick(row)} style={{ cursor: 'pointer' }}>
+            <tr key={row.id} onClick={() => handleRowClick(row)} style={{ cursor: 'pointer' }}>
               <td>{row.title}</td>
               <td>
                 {new Date(row.date).toLocaleDateString('en-US', {
@@ -125,22 +125,25 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
                 })}
               </td>
               <td onClick={(e) => e.stopPropagation()}>
-                <div className="btn-group">
-                  <button
-                    className="btn btn-secondary btn-sm share"
-                    onClick={() => handleShare(row)}
-                  >
-                    <i className="bi bi-share"></i> Share
-                  </button>
-                  <button
-                    className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
-                    onClick={() => copyLink(row)}
-                  >
-                    <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
-                    {copiedId === row.id ? 'Copied' : 'Copy'}
-                  </button>
-                </div>
-              </td>
+  <div className="btn-group">
+    <button
+      className="btn btn-primary btn-sm share"
+      onClick={() => {
+        const url = new URL(window.location.href);
+        url.searchParams.set('id', row.id.toString());
+        window.location.href = url.toString();
+      }}
+    >
+      <i className="bi bi-eye"></i>
+    </button>
+    <button
+      className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
+      onClick={() => copyLink(row)}
+    >
+      <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
+    </button>
+  </div>
+</td>
             </tr>
           ))}
         </tbody>
