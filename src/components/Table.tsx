@@ -1,23 +1,27 @@
-// Table.tsx
 import React, { useState } from "react";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { Modal } from 'react-bootstrap';
+
+type SortOrder = 'asc' | 'desc' | null;
+interface SortConfig {
+  key: string;
+  direction: SortOrder;
+}
 
 interface TableProps {
   data: any[];
   columns: { title: string }[];
-  expandedRows: { [key: number]: boolean };
-  toggleRow: (id: number) => void;
   entriesPerPage: number;
   currentPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
   handleShare: (item: any) => void;
 }
 
-const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, entriesPerPage, currentPage, setCurrentPage, handleShare }) => {
+const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPage, setCurrentPage, handleShare }) => {
   const totalPages = Math.ceil(data.length / entriesPerPage);
-  const paginatedData = entriesPerPage === 0 ? data : data.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedRow, setSelectedRow] = useState<any>(null);
   const [copiedId, setCopiedId] = useState<number | null>(null);
+  const [sortConfig, setSortConfig] = useState<SortConfig>({ key: '', direction: null });
 
   const copyLink = async (row: any) => {
     try {
@@ -37,93 +41,175 @@ const Table: React.FC<TableProps> = ({ data, columns, expandedRows, toggleRow, e
     }
   };
 
+  const handleRowClick = (row: any) => {
+    setSelectedRow(row);
+    setShowModal(true);
+  };
+
+  const sortData = (data: any[], key: string, direction: SortOrder) => {
+    if (!direction) return data;
+
+    return [...data].sort((a, b) => {
+      if (key === 'date') {
+        const dateA = new Date(a[key]).getTime();
+        const dateB = new Date(b[key]).getTime();
+        return direction === 'asc' ? dateA - dateB : dateB - dateA;
+      }
+      
+      if (a[key] < b[key]) return direction === 'asc' ? -1 : 1;
+      if (a[key] > b[key]) return direction === 'asc' ? 1 : -1;
+      return 0;
+    });
+  };
+
+  const handleSort = (key: string) => {
+    let direction: SortOrder = 'asc';
+    
+    if (sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc';
+    } else if (sortConfig.key === key && sortConfig.direction === 'desc') {
+      direction = null;
+    }
+    
+    setSortConfig({ key, direction });
+  };
+
+  const sortedData = sortData(data, sortConfig.key, sortConfig.direction);
+  const paginatedData = entriesPerPage === 0 
+    ? sortedData 
+    : sortedData.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage);
+
   return (
     <>
-            <div className="mb-2">
-  <strong>Found {data.length} records</strong>
-</div>
+      <div className="mb-2">
+        <strong>Found {data.length} records</strong>
+      </div>
 
       <table id="example" className="table table-striped table-hover w-100">
       <thead>
   <tr>
-    <th>Expand</th>
-    {columns.slice(0, 4).map((col, index) => (
-      <th key={index}>{col.title}</th>
-    ))}
-    <th>Actions</th>  {/* Add this line */}
+    <th 
+      onClick={() => handleSort('title')} 
+      style={{ cursor: 'pointer', width: '60%' }}
+    >
+      Title {' '}
+      <i className={`bi ${
+        sortConfig.key === 'title'
+          ? `bi-sort-${sortConfig.direction === 'asc' ? 'up' : 'down'}`
+          : 'bi-sort-down-alt'
+      }`}></i>
+    </th>
+    <th 
+      onClick={() => handleSort('date')} 
+      style={{ cursor: 'pointer', width: '20%' }}
+    >
+      Date {' '}
+      <i className={`bi ${
+        sortConfig.key === 'date'
+          ? `bi-sort-${sortConfig.direction === 'asc' ? 'up' : 'down'}`
+          : 'bi-sort-down-alt'
+      }`}></i>
+    </th>
+    <th style={{ width: '20%' }}>Actions</th>
   </tr>
 </thead>
         <tbody>
-  {paginatedData.map((row) => (
-    
-    <React.Fragment key={row.id}>
-      
-      <tr>
-        <td>
-          <button
-            className="expand-btn btn btn-sm share blue"
-            onClick={() => toggleRow(row.id)}
-          >
-        {expandedRows[row.id] ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-
-          </button>
-        </td>
-        <td>{row.title}</td>
-        <td>{row.category}</td>
-        <td>{row.date}</td>
-        <td>
-          {Array.isArray(row.audience) ? (
-            <ul className="m-0 p-0" style={{ listStyleType: "none" }}>
-              {row.audience.map((audienceItem: string, index: number) => (
-                <li key={index}>{audienceItem}</li>
-              ))}
-            </ul>
-          ) : (
-            row.audience
-          )}
-        </td>
-        
-        <td>
-        <div className="btn-group">
-          <button
-            className="btn btn-secondary btn-sm share"
-            onClick={() => handleShare(row)}
-          >
-            <i className="bi bi-share"></i> Share
-          </button>
-          <button
-            className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
-            onClick={() => copyLink(row)}
-          >
-            <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
-            {copiedId === row.id ? 'Copied' : 'Copy'}
-          </button>
-        </div>
-      </td>
-      </tr>
-      {expandedRows[row.id] && (
-        <tr className="bg-light">
-          <td colSpan={6}>
-            <div className="p-3">
-              <strong>What you need to know:</strong> {row.what}
-              <br />
-              <strong>Action Required:</strong> {row.action}
-              <br />
-              <strong>Notes:</strong> {row.notes}
-              <br />
-              <strong>Resources:</strong> {row.resources}
-              <br />
-              <strong>Who to Contact:</strong> {row.who}
-            </div>
-          </td>
-        </tr>
-      )}
-    </React.Fragment>
-  ))}
-</tbody>
-
-
+          {paginatedData.map((row) => (
+            <tr onClick={() => handleRowClick(row)} style={{ cursor: 'pointer' }}>
+              <td>{row.title}</td>
+              <td>
+                {new Date(row.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </td>
+              <td onClick={(e) => e.stopPropagation()}>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-secondary btn-sm share"
+                    onClick={() => handleShare(row)}
+                  >
+                    <i className="bi bi-share"></i> Share
+                  </button>
+                  <button
+                    className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
+                    onClick={() => copyLink(row)}
+                  >
+                    <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
+                    {copiedId === row.id ? 'Copied' : 'Copy'}
+                  </button>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
+
+      {/* Modal */}
+      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg">
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedRow?.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {selectedRow && (
+            <div className="p-3">
+              <div className="mb-4">
+                <h5>What you need to know:</h5>
+                <p>{selectedRow.what}</p>
+              </div>
+
+              <div className="row mb-3">
+                <div className="col-md-6">
+                  <strong>Category:</strong> {selectedRow.category}
+                </div>
+                <div className="col-md-6">
+                  <strong>Date:</strong>{' '}
+                  {new Date(selectedRow.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </div>
+              </div>
+
+              <div className="mb-3">
+                <strong>Audience:</strong>{' '}
+                {Array.isArray(selectedRow.audience) ? (
+                  selectedRow.audience.join(', ')
+                ) : (
+                  selectedRow.audience
+                )}
+              </div>
+
+              <div className="mb-3">
+                <strong>Action Required:</strong>
+                <p>{selectedRow.action}</p>
+              </div>
+
+              <div className="mb-3">
+                <strong>Notes:</strong>
+                <p>{selectedRow.notes}</p>
+              </div>
+
+              <div className="mb-3">
+                <strong>Resources:</strong>
+                <p>{selectedRow.resources}</p>
+              </div>
+
+              <div className="mb-3">
+                <strong>Who to Contact:</strong>
+                <p>{selectedRow.who}</p>
+              </div>
+            </div>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <button className="btn btn-secondary" onClick={() => setShowModal(false)}>
+            Close
+          </button>
+        </Modal.Footer>
+      </Modal>
 
       {/* Pagination Controls */}
       {entriesPerPage !== 0 && (

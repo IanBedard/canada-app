@@ -6,12 +6,10 @@ import { columns, data } from "../data";
 import SidebarFilter from "./SidebarFilter";
 import SearchAndPagination from "./SearchAndPagination";
 import Table from "./Table";
-import { GcdsButton } from "@cdssnc/gcds-components-react";
 
 DataTable.use(DT);
 
 export default function DataTableComponent() {
-  const [expandedRows, setExpandedRows] = useState<{ [key: number]: boolean }>({});
   const [filteredData, setFilteredData] = useState(data);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedAudiences, setSelectedAudiences] = useState<string[]>([]);
@@ -30,10 +28,6 @@ export default function DataTableComponent() {
       // If ID is provided, filter to show only that entry
       const singleEntry = data.filter(row => row.id === parseInt(idParam));
       setFilteredData(singleEntry);
-      setExpandedRows(prev => ({
-        ...prev,
-        [parseInt(idParam)]: true
-      }));
       setIsSingleEntryView(true);
       // Clear other filters
       setSelectedCategories([]);
@@ -78,14 +72,10 @@ export default function DataTableComponent() {
     
     // Reset to normal view
     setFilteredData(data);
-    setExpandedRows({});
     setIsSingleEntryView(false);
     resetFilters();
   };
 
-  const toggleRow = (id: number) => {
-    setExpandedRows((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
 
   const applyFilters = (
     search: string, 
@@ -217,16 +207,14 @@ export default function DataTableComponent() {
             resetFilters={resetFilters}
           />
         )}
-        <Table 
-          data={filteredData}
-          columns={columns}
-          expandedRows={expandedRows}
-          toggleRow={toggleRow}
-          entriesPerPage={entriesPerPage}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-          handleShare={handleShare}
-        />
+ <Table 
+  data={filteredData}
+  columns={columns}
+  entriesPerPage={entriesPerPage}
+  currentPage={currentPage}
+  setCurrentPage={setCurrentPage}
+  handleShare={handleShare}
+/>
       </div>
     </div>
   );

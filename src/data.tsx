@@ -166,8 +166,31 @@ export const columns = [
       notes: "New reporting lines will be effective next quarter.",
       resources: "Restructuring Overview Document",
       who: "Corporate Communications"
+    },
+    {
+      id: 20,
+      title: "Automated data clean-up in the Time and Labour module",
+      category: "For information",
+      date: "2025-02-06",
+      audience: "Change agents, Compensation advisors (CAs), Timekeepers, Section 34 managers, Employees",
+      what: "PSPC will be performing a data clean-up activity in the pay system’s Time and Labour module, changing the status of outstanding un-actionable pay transactions to 'closed'.",
+      action: "No action is required as this process is automated.",
+      notes: "Departments will continue to receive bi-weekly Time and Labour reports (R317 and R318).",
+      resources: "Time and Labour Payable Status Reason Codes for Closed Transactions job aid",
+      who: "Who to contact for pay system support"
+    },
+    {
+      id: 21,
+      title: "Department access schedule for 2024 tax slips",
+      category: "For information",
+      date: "2025-02-04",
+      audience: "Change agents, Compensation advisors (CAs), Human Resources (HR) professionals, Employees",
+      what: "PSPC will begin issuing the 2024 tax slips to employees on February 21, 2025.",
+      action: "Departments and agencies are encouraged to review the department access schedule for 2024 tax slips and communicate the access date to their employees.",
+      notes: "Former employees or employees without access to the GC network can access their 2024 tax slips on MyGCPay external.",
+      resources: "Accessing and managing your tax slips, Department access schedule for 2024 tax slips, Tax season toolbox",
+      who: "Who to contact for pay system support"
     }
-    
       ];
       
  
