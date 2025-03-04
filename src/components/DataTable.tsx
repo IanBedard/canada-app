@@ -97,9 +97,13 @@ export default function DataTableComponent() {
       result = result.filter((row) =>
         Array.isArray(row.audience) &&
         row.audience.some((audienceItem) =>
-          audiences.some((selectedAudience) =>
-            new RegExp(selectedAudience.replace(/[.*+?^${}()|\[\]\\]/g, "\\$&"), "i").test(audienceItem)
-          )
+          audiences.some((selectedAudience) => {
+            // Case-insensitive comparison
+            const normalizedItem = audienceItem.toLowerCase();
+            const normalizedSelected = selectedAudience.toLowerCase();
+            return normalizedItem.includes(normalizedSelected) || 
+                   normalizedSelected.includes(normalizedItem);
+          })
         )
       );
     }

@@ -63,15 +63,16 @@ export default function SidebarFilter({
   };
 
   const handleAudienceChange = (audience: string) => {
+    const normalizedAudience = audience.toLowerCase(); // Normalize the selected audience
     const updatedAudiences = selectedAudiences.includes(audience)
       ? selectedAudiences.filter((a) => a !== audience)
       : [...selectedAudiences, audience];
-
+  
     setSelectedAudiences(updatedAudiences);
     applyFilters(
       searchTerm, 
       selectedCategories, 
-      updatedAudiences, 
+      updatedAudiences,
       selectedMonth, 
       selectedYear
     );
