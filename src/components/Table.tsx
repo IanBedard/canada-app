@@ -127,7 +127,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
               <td onClick={(e) => e.stopPropagation()}>
   <div className="btn-group">
     <button
-      className="btn btn-primary btn-sm share"
+      className="btn btn-primary btn-sm share blue-button"
       onClick={() => {
         const url = new URL(window.location.href);
         url.searchParams.set('id', row.id.toString());
