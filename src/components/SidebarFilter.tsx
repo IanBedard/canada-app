@@ -101,7 +101,7 @@ export default function SidebarFilter({
         </button>
       </div>
       
-      <div className="accordion" id="filterAccordion">
+      <div className="accordion  sidebarFilter " id="filterAccordion">
         <div className="accordion-item">
           <h2 className="accordion-header">
             <button 

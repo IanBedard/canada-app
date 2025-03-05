@@ -26,3 +26,26 @@ code {
   color: rgb(0, 90, 155);;
 }
 
+.content-wrapper {
+  min-width: 1200px; /* Or your desired minimum width */
+  max-width: 1440px; /* Or your desired maximum width */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-section {
+  width: 100%;
+}
+
+.table-section {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sidebarFilter {
+  min-width: 240px;
+  width: 240px;
+  flex-shrink: 0;
+  padding: 20px;
+ 
+}
