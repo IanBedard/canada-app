@@ -22,9 +22,9 @@ export default function Content() {
        <GcdsText>
        <p>You can use:</p>
        <ul>
-        <li>Category Filter = ||</li>
-        <li>Audience Filter = &&</li>
-        <li>Year and Month Filters works indepedently</li>
+        <li><b>Category Filter</b>: You can select multiple categories, and the filter will return entries matching any of the selected categories.</li>
+        <li><b>Audience Filter</b>: All selected audience types must be present for an entry to match the filter.</li>
+        <li><b>Year and Month Filters</b>: These filters work independently of each other. You can filter by year, by month, or by both, without any interaction between them.</li>
        </ul>
       </GcdsText>
       </GcdsDetails>
