@@ -26,7 +26,7 @@ export default function DataTableComponent() {
     
     if (idParam) {
       // If ID is provided, filter to show only that entry
-      const singleEntry = data.filter(row => row.id === parseInt(idParam));
+      const singleEntry = data.filter(row => row.id.toString() === idParam);
       setFilteredData(singleEntry);
       setIsSingleEntryView(true);
       // Clear other filters
@@ -161,67 +161,83 @@ export default function DataTableComponent() {
         />
       )}
       <div className="flex-grow-1 p-3">
-        {isSingleEntryView ? (
-          <div className="container">
-          <div className="mb-3">
-            <button 
-              className="btn btn-primary"
-              onClick={clearSingleEntry}
-            >
-              Back to full list
-            </button>
-          </div>
-          {filteredData.map((entry) => (
-            <div key={entry.id} className="card">
-              <div className="card-header">
-                <h4>{entry.title}</h4>
-                <div className="text-muted">
-                  {new Date(entry.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </div>
-              </div>
-              <div className="card-body">
-                <div className="mb-4">
-                  <h5>What you need to know:</h5>
-                  <p>{entry.what}</p>
-                </div>
-
-                <div className="row mb-3">
-                  <div className="col-md-6">
-                    <strong>Category:</strong> {entry.category}
-                  </div>
-                  <div className="col-md-6">
-                    <strong>Audience:</strong>{' '}
-                    {Array.isArray(entry.audience) ? entry.audience.join(', ') : entry.audience}
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <strong>Action Required:</strong>
-                  <p>{entry.action}</p>
-                </div>
-
-                <div className="mb-3">
-                  <strong>Notes:</strong>
-                  <p>{entry.notes}</p>
-                </div>
-
-                <div className="mb-3">
-                  <strong>Resources:</strong>
-                  <p>{entry.resources}</p>
-                </div>
-
-                <div className="mb-3">
-                  <strong>Who to Contact:</strong>
-                  <p>{entry.who}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+      {isSingleEntryView ? (
+  <div className="container">
+    <div className="mb-3">
+      <button 
+        className="btn btn-primary"
+        onClick={clearSingleEntry}
+      >
+        Back to full list
+      </button>
+    </div>
+    {filteredData.map((entry) => (
+  <div key={entry.id} className="card">
+    <div className="card-header">
+      <h4>{entry.title || 'Untitled'}</h4>
+      {entry.date && (
+        <div className="text-muted">
+          {new Date(entry.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}
         </div>
+      )}
+    </div>
+    <div className="card-body">
+      {entry.what && (
+        <div className="mb-4">
+          <h5>What you need to know:</h5>
+          <div dangerouslySetInnerHTML={{ __html: entry.what }} />
+        </div>
+      )}
+
+      <div className="row mb-3">
+        {entry.category && (
+          <div className="col-md-6">
+            <strong>Category:</strong> {entry.category}
+          </div>
+        )}
+        {entry.audience && (
+          <div className="col-md-6">
+            <strong>Audience:</strong>{' '}
+            {Array.isArray(entry.audience) ? entry.audience.join(', ') : entry.audience}
+          </div>
+        )}
+      </div>
+
+      {entry.action && (
+        <div className="mb-3">
+          <strong>Action Required:</strong>
+          <div dangerouslySetInnerHTML={{ __html: entry.action }} />
+        </div>
+      )}
+
+      {entry.notes && (
+        <div className="mb-3">
+          <strong>Notes:</strong>
+          <div dangerouslySetInnerHTML={{ __html: entry.notes }} />
+        </div>
+      )}
+
+      {entry.resources && (
+        <div className="mb-3">
+          <strong>Resources:</strong>
+          <div dangerouslySetInnerHTML={{ __html: entry.resources }} />
+        </div>
+      )}
+
+      {entry.who && (
+        <div className="mb-3">
+          <strong>Who to Contact:</strong>
+          <div dangerouslySetInnerHTML={{ __html: entry.who }} />
+        </div>
+      )}
+    </div>
+  </div>
+))}
+  </div>
         ) : (
           <>
           <SearchAndPagination 

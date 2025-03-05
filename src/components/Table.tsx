@@ -154,59 +154,72 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
         <Modal.Header closeButton>
           <Modal.Title>{selectedRow?.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          {selectedRow && (
-            <div className="p-3">
-              <div className="mb-4">
-                <h5>What you need to know:</h5>
-                <p>{selectedRow.what}</p>
-              </div>
 
-              <div className="row mb-3">
-                <div className="col-md-6">
-                  <strong>Category:</strong> {selectedRow.category}
-                </div>
-                <div className="col-md-6">
-                  <strong>Date:</strong>{' '}
-                  {new Date(selectedRow.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </div>
-              </div>
+<Modal.Body>
+  {selectedRow && (
+    <div className="p-3">
+      {selectedRow.what && (
+        <div className="mb-4">
+          <h5>What you need to know:</h5>
+          <div dangerouslySetInnerHTML={{ __html: selectedRow.what }} />
+        </div>
+      )}
 
-              <div className="mb-3">
-                <strong>Audience:</strong>{' '}
-                {Array.isArray(selectedRow.audience) ? (
-                  selectedRow.audience.join(', ')
-                ) : (
-                  selectedRow.audience
-                )}
-              </div>
+      <div className="row mb-3">
+        {selectedRow.category && (
+          <div className="col-md-6">
+            <strong>Category:</strong> {selectedRow.category}
+          </div>
+        )}
+        {selectedRow.date && (
+          <div className="col-md-6">
+            <strong>Date:</strong>{' '}
+            {new Date(selectedRow.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </div>
+        )}
+      </div>
 
-              <div className="mb-3">
-                <strong>Action Required:</strong>
-                <p>{selectedRow.action}</p>
-              </div>
+      {selectedRow.audience && (
+        <div className="mb-3">
+          <strong>Audience:</strong>{' '}
+          {Array.isArray(selectedRow.audience) ? selectedRow.audience.join(', ') : selectedRow.audience}
+        </div>
+      )}
 
-              <div className="mb-3">
-                <strong>Notes:</strong>
-                <p>{selectedRow.notes}</p>
-              </div>
+      {selectedRow.action && (
+        <div className="mb-3">
+          <strong>Action Required:</strong>
+          <div dangerouslySetInnerHTML={{ __html: selectedRow.action }} />
+        </div>
+      )}
 
-              <div className="mb-3">
-                <strong>Resources:</strong>
-                <p>{selectedRow.resources}</p>
-              </div>
+      {selectedRow.notes && (
+        <div className="mb-3">
+          <strong>Notes:</strong>
+          <div dangerouslySetInnerHTML={{ __html: selectedRow.notes }} />
+        </div>
+      )}
 
-              <div className="mb-3">
-                <strong>Who to Contact:</strong>
-                <p>{selectedRow.who}</p>
-              </div>
-            </div>
-          )}
-        </Modal.Body>
+      {selectedRow.resources && (
+        <div className="mb-3">
+          <strong>Resources:</strong>
+          <div dangerouslySetInnerHTML={{ __html: selectedRow.resources }} />
+        </div>
+      )}
+
+      {selectedRow.who && (
+        <div className="mb-3">
+          <strong>Who to Contact:</strong>
+          <div dangerouslySetInnerHTML={{ __html: selectedRow.who }} />
+        </div>
+      )}
+    </div>
+  )}
+</Modal.Body>
         <Modal.Footer>
           <button className="btn btn-secondary" onClick={() => setShowModal(false)}>
             Close
