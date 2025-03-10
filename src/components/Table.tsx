@@ -142,23 +142,58 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
       </table>
 
       {/* Pagination Controls */}
-      {entriesPerPage !== 0 && (
-        <nav>
-          <ul className="pagination justify-content-end">
-            <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-              <button className="page-link" onClick={() => setCurrentPage(currentPage - 1)}>Previous</button>
-            </li>
-            {Array.from({ length: totalPages }, (_, index) => (
-              <li key={index} className={`page-item ${currentPage === index + 1 ? "active" : ""}`}>
-                <button className="page-link" onClick={() => setCurrentPage(index + 1)}>{index + 1}</button>
-              </li>
-            ))}
-            <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
-              <button className="page-link" onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
-            </li>
-          </ul>
-        </nav>
-      )}
+    
+{entriesPerPage !== 0 && (
+  <nav className="wb-tables-pagination" role="navigation">
+    <ul className="pagination mrgn-tp-md">
+      <li className={`${currentPage === 1 ? "disabled" : ""}`}>
+        <a 
+          href="#" 
+          className="btn btn-default" 
+          rel="prev"
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentPage(currentPage - 1);
+          }}
+          aria-label="Previous page"
+        >
+          <span className="glyphicon glyphicon-chevron-left"></span>
+          <span className="wb-inv">Previous</span>
+        </a>
+      </li>
+      {Array.from({ length: totalPages }, (_, index) => (
+        <li key={index} className={currentPage === index + 1 ? "active" : ""}>
+          <a
+            href="#"
+            className="btn btn-default"
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentPage(index + 1);
+            }}
+            aria-label={`Page ${index + 1}`}
+          >
+            {index + 1}
+          </a>
+        </li>
+      ))}
+      <li className={`${currentPage === totalPages ? "disabled" : ""}`}>
+        <a 
+          href="#" 
+          className="btn btn-default" 
+          rel="next"
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentPage(currentPage + 1);
+          }}
+          aria-label="Next page"
+        >
+          <span className="glyphicon glyphicon-chevron-right"></span>
+          <span className="wb-inv">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+)}
     </>
   );
 };
