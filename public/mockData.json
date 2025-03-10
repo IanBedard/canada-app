@@ -1,0 +1,26 @@
+{
+    "columns": [
+      { "title": "Title", "data": "title" },
+      { "title": "Category", "data": "category" },
+      { "title": "Date", "data": "date" },
+      { "title": "Audience", "data": "audience" }
+    ],
+    "data": {
+      "25-02-06-communication1": {
+        "id": "25-02-06-communication1",
+        "title": "Automated data clean-up in the Time and Labour module",
+        "category": "For information",
+        "date": "2025-02-06",
+        "audience": [
+          "Change agents",
+          "Compensation advisors (CAs)",
+          "Timekeepers"
+        ],
+        "what": "<ul><li>Public Services and Procurement Canada (PSPC) will be performing a data clean-up activity...</li></ul>",
+        "action": "<p>No action is required as this process is automated.</p>",
+        "notes": "<p>Departments will continue to receive the bi-weekly Time and Labour reports...</p>",
+        "resources": "<p>The <a href='#'>Time and Labour Payable Status</a> describes the process...</p>",
+        "who": "<p><a href='#'>Who to contact for pay system support</a></p>"
+      }
+    }
+  }

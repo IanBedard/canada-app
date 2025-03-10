@@ -89,13 +89,19 @@ export default function SidebarFilter({
     applyFilters(searchTerm, selectedCategories, selectedAudiences, selectedMonth, year);
   };
 
+  const handleReset = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault(); // Prevent default button behavior
+    setOpenAccordion(null); // Reset accordion state
+    resetFilters(); // Call parent reset function only once
+  };
+
   return (
     <aside className="wb-sec">
       <div className="wb-filter-header">
         <GcdsHeading tag="h4"><FilterAltIcon/> Filters</GcdsHeading>
         <button 
           className="btn btn-default btn-sm"
-          onClick={resetFilters}
+          onClick={handleReset}
         >
           <span className="glyphicon glyphicon-refresh"></span> Reset
         </button>
