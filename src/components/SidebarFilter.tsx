@@ -50,7 +50,7 @@ export default function SidebarFilter({
   const handleCategoryChange = (category: string) => {
     const updatedCategories = selectedCategories.includes(category)
       ? selectedCategories.filter((c) => c !== category)
-      : [...selectedCategories, category];
+      : Array.from(new Set([...selectedCategories, category])); // Convert Set to Array
 
     setSelectedCategories(updatedCategories);
     applyFilters(
@@ -65,8 +65,8 @@ export default function SidebarFilter({
   const handleAudienceChange = (audience: string) => {
     const updatedAudiences = selectedAudiences.includes(audience)
       ? selectedAudiences.filter((a) => a !== audience)
-      : [...selectedAudiences, audience];
-  
+      : Array.from(new Set([...selectedAudiences, audience])); // Convert Set to Array
+
     setSelectedAudiences(updatedAudiences);
     applyFilters(
       searchTerm, 

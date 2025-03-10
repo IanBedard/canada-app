@@ -78,50 +78,52 @@ export default function DataTableComponent() {
 
 
   const applyFilters = (
-    search: string, 
-    categories: string[], 
-    audiences: string[], 
-    month: string, 
+    search: string,
+    categories: string[],
+    audiences: string[],
+    month: string,
     year: string
   ) => {
-    // Check if we're in single entry view
-    if (isSingleEntryView) return;
-
-    let result = data;
+    let filtered = [...data];
 
     if (categories.length > 0) {
-      result = result.filter((row) => categories.includes(row.category));
+      filtered = filtered.filter(item => categories.includes(item.category));
     }
 
     if (audiences.length > 0) {
-      result = result.filter((row) =>
-        Array.isArray(row.audience) &&
-        audiences.every((selectedAudience) =>
-          row.audience.some((audienceItem) => 
-            audienceItem.toLowerCase() === selectedAudience.toLowerCase()
-          )
-        )
+      filtered = filtered.filter(item => 
+        audiences.every(audience => item.audience.includes(audience))
       );
     }
 
     if (month) {
-      result = result.filter((row) => new Date(row.date).getMonth() + 1 === parseInt(month));
+      filtered = filtered.filter(item => {
+        const itemDate = new Date(item.date);
+        return (itemDate.getMonth() + 1).toString() === month;
+      });
     }
 
     if (year) {
-      result = result.filter((row) => new Date(row.date).getFullYear().toString() === year);
+      filtered = filtered.filter(item => {
+        const itemDate = new Date(item.date);
+        return itemDate.getFullYear().toString() === year;
+      });
     }
 
     if (search) {
-      result = result.filter((row) =>
-        Object.values(row).some((value) =>
-          value.toString().toLowerCase().includes(search.toLowerCase())
+      filtered = filtered.filter(item =>
+        Object.values(item).some(value =>
+          value?.toString().toLowerCase().includes(search.toLowerCase())
         )
       );
     }
 
-    setFilteredData(result);
-    setCurrentPage(1);
+    // Remove duplicates by using object ID
+    const uniqueFiltered = filtered.filter((item, index, self) =>
+      index === self.findIndex((t) => t.id === item.id)
+    );
+
+    setFilteredData(uniqueFiltered);
   };
 
   const resetFilters = () => {
