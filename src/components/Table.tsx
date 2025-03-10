@@ -26,30 +26,19 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
   const [copiedId, setCopiedId] = useState<number | null>(null);
   const [sortConfig, setSortConfig] = useState<SortConfig>({ key: 'date', direction: 'desc' });
 
-  const handleViewDetails = (row: TableRow) => {
+  const copyLink = async (row: any) => {
     try {
-      if (!row?.id) return;
-      const url = new URL(window.location.href);
-      const id = typeof row.id === 'number' ? row.id.toString() : row.id;
-      url.searchParams.set('id', id);
-      window.location.href = url.toString();
-    } catch (error) {
-      console.error('Error handling view details:', error);
-    }
-  };
-
-  const copyLink = async (row: TableRow) => {
-    try {
-      if (!row?.id) return;
       const baseUrl = window.location.origin + window.location.pathname;
       const searchParams = new URLSearchParams();
-      const id = typeof row.id === 'number' ? row.id.toString() : row.id;
-      searchParams.set('id', id);
+      searchParams.set('id', row.id.toString());
       const shareableUrl = `${baseUrl}?${searchParams.toString()}`;
       
       await navigator.clipboard.writeText(shareableUrl);
-      setCopiedId(typeof row.id === 'number' ? row.id : parseInt(row.id));
-      setTimeout(() => setCopiedId(null), 1000);
+      setCopiedId(row.id);
+      // Reset the button after 1 seconds
+      setTimeout(() => {
+        setCopiedId(null);
+      }, 1000);
     } catch (error) {
       console.error('Error copying link:', error);
     }
@@ -137,17 +126,21 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
                 <div className="btn-group">
                   <button
                     className="btn btn-primary btn-sm share blue-button"
-                    onClick={() => handleViewDetails(row)}
+                    onClick={() => {
+                      if (row.id) {
+                        const url = new URL(window.location.href);
+                        url.searchParams.set('id', row.id.toString());
+                        window.location.href = url.toString();
+                      }
+                    }}
                     aria-label="View details"
-                    disabled={!row?.id}
                   >
                     <i className="bi bi-eye"></i>
                   </button>
                   <button
                     className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-default share'}`}
-                    onClick={() => copyLink(row)}
+                    onClick={() => row.id && copyLink(row)}
                     aria-label="Copy link"
-                    disabled={!row?.id}
                   >
                     <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
                   </button>
