@@ -12,7 +12,13 @@ interface TableProps {
   entriesPerPage: number;
   currentPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+}
 
+interface TableRow {
+  id: string | number;
+  title: string;
+  date: string;
+  // ...other properties
 }
 
 const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPage, setCurrentPage }) => {
@@ -106,7 +112,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
   </tr>
 </thead>
         <tbody>
-          {paginatedData.map((row) => (
+          {paginatedData.map((row: TableRow) => (
             <tr key={row.id}>
               <td>{row.title}</td>
               <td>
@@ -117,25 +123,29 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
                 })}
               </td>
               <td>
-  <div className="btn-group">
-    <button
-      className="btn btn-primary btn-sm share blue-button"
-      onClick={() => {
-        const url = new URL(window.location.href);
-        url.searchParams.set('id', row.id.toString());
-        window.location.href = url.toString();
-      }}
-    >
-      <i className="bi bi-eye"></i>
-    </button>
-    <button
-      className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-default share'}`}
-      onClick={() => copyLink(row)}
-    >
-      <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
-    </button>
-  </div>
-</td>
+                <div className="btn-group">
+                  <button
+                    className="btn btn-primary btn-sm share blue-button"
+                    onClick={() => {
+                      if (row.id) {
+                        const url = new URL(window.location.href);
+                        url.searchParams.set('id', row.id.toString());
+                        window.location.href = url.toString();
+                      }
+                    }}
+                    aria-label="View details"
+                  >
+                    <i className="bi bi-eye"></i>
+                  </button>
+                  <button
+                    className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-default share'}`}
+                    onClick={() => row.id && copyLink(row)}
+                    aria-label="Copy link"
+                  >
+                    <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
+                  </button>
+                </div>
+              </td>
             </tr>
           ))}
         </tbody>
