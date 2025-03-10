@@ -32,10 +32,10 @@ export const useData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/mockData.json');
+        const response = await fetch('/data/mockData.json');
         
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error(`Network response was not ok: ${response.status}`);
         }
         
         const jsonData = await response.json();

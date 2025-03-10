@@ -143,7 +143,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
 
       {/* Pagination Controls */}
     
-{entriesPerPage !== 0 && (
+{entriesPerPage !== 0 && totalPages > 1 && (
   <nav className="wb-tables-pagination" role="navigation">
     <ul className="pagination mrgn-tp-md">
       <li className={`${currentPage === 1 ? "disabled" : ""}`}>
@@ -153,7 +153,9 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
           rel="prev"
           onClick={(e) => {
             e.preventDefault();
-            setCurrentPage(currentPage - 1);
+            if (currentPage > 1) {
+              setCurrentPage(currentPage - 1);
+            }
           }}
           aria-label="Previous page"
         >
@@ -183,7 +185,9 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
           rel="next"
           onClick={(e) => {
             e.preventDefault();
-            setCurrentPage(currentPage + 1);
+            if (currentPage < totalPages) {
+              setCurrentPage(currentPage + 1);
+            }
           }}
           aria-label="Next page"
         >
