@@ -1,8 +1,5 @@
 import { useState } from "react";
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import "@cdssnc/gcds-components";
-import "@cdssnc/gcds-components/dist/gcds/gcds.css";
-import { GcdsHeading, GcdsLink, GcdsContainer, GcdsText, GcdsDateModified } from "@cdssnc/gcds-components-react";
 
 interface SidebarFilterProps {
   selectedCategories: string[];
@@ -47,15 +44,12 @@ export default function SidebarFilter({
     setOpenAccordion(openAccordion === section ? null : section);
   };
 
-  const handleCategoryChange = (category: string) => {
-    const updatedCategories = selectedCategories.includes(category)
-      ? selectedCategories.filter((c) => c !== category)
-      : Array.from(new Set([...selectedCategories, category])); // Convert Set to Array
-
-    setSelectedCategories(updatedCategories);
+  const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedOptions = Array.from(event.target.selectedOptions).map(option => option.value);
+    setSelectedCategories(selectedOptions);
     applyFilters(
       searchTerm, 
-      updatedCategories, 
+      selectedOptions, 
       selectedAudiences, 
       selectedMonth, 
       selectedYear
@@ -98,7 +92,7 @@ export default function SidebarFilter({
   return (
     <aside className="wb-sec">
       <div className="wb-filter-header">
-        <GcdsHeading tag="h4"><FilterAltIcon/> Filters</GcdsHeading>
+        <h4><FilterAltIcon/> Filters</h4>
         <button 
           className="btn btn-default btn-sm"
           onClick={handleReset}
@@ -113,19 +107,23 @@ export default function SidebarFilter({
             Filter by Category
           </summary>
           <div className="wb-filter-content">
-            {categoryOptions.map((category) => (
-              <div key={category} className="checkbox">
-                <label htmlFor={`category-${category}`}>
-                  <input
-                    type="checkbox"
-                    id={`category-${category}`}
-                    checked={selectedCategories.includes(category)}
-                    onChange={() => handleCategoryChange(category)}
-                  />
+            <select 
+              multiple
+              className="form-control"
+              value={selectedCategories}
+              onChange={handleCategoryChange}
+              size={5}
+              aria-label="Select categories"
+            >
+              {categoryOptions.map((category) => (
+                <option key={category} value={category}>
                   {category}
-                </label>
-              </div>
-            ))}
+                </option>
+              ))}
+            </select>
+            <small className="text-muted">
+              Hold Ctrl (Windows) or Command (Mac) to select multiple categories
+            </small>
           </div>
         </details>
 

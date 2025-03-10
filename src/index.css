@@ -48,4 +48,26 @@ code {
   flex-shrink: 0;
   padding: 20px;
  
+}.wb-filter-content select[multiple] {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.wb-filter-content select[multiple] option {
+  padding: 8px 12px;
+}
+
+.wb-filter-content select[multiple] option:checked {
+  background-color: #26374a;
+  color: white;
+}
+
+.text-muted {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
 }
