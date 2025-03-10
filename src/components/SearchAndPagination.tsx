@@ -1,4 +1,5 @@
 import React from "react";
+import { GcdsInput } from "@cdssnc/gcds-components-react";
 
 interface SearchAndPaginationProps {
   searchTerm: string;
@@ -22,41 +23,56 @@ const SearchAndPagination: React.FC<SearchAndPaginationProps> = ({
     setSearchTerm(term);
     applyFilters(term);
   };
+
   const handleReset = () => {
-    setSearchTerm('');  // Clear the search input
-    resetFilters();     // Call the resetFilters function from props
+    setSearchTerm('');
+    resetFilters();
   };
 
   return (
-    <div className="d-flex justify-content-between align-items-center mb-3">
-
-   <div className="d-flex w-100">
-  <div className="flex-grow-1 me-2">
-    <input
-      type="text"
-      className="form-control w-100"
-      placeholder="Search..."
-      value={searchTerm}
-      onChange={handleSearch}
-    />
-  </div>
-
-</div>
-
-      {/*<div>
-        <label className="me-2">Show</label>
-        <select
-          className="form-select d-inline w-auto"
-          value={entriesPerPage}
-          onChange={(e) => setEntriesPerPage(parseInt(e.target.value))}
-        >
-          <option value={10}>10</option>
-          <option value={25}>25</option>
-          <option value={50}>50</option>
-          <option value={0}>All</option>
-        </select>
-        <span className="ms-2">entries</span>
-      </div>*/}
+    <div className="mrgn-bttm-md">
+      <div className="row">
+        <div className="col-md-8">
+          <div className="form-inline">
+            <div className="input-group">
+              <input
+                type="search"
+                className="form-control wb-srch-q"
+                placeholder="Search in table..."
+                value={searchTerm}
+                onChange={handleSearch}
+                aria-label="Search in table"
+              />
+              <button
+                className="btn btn-default mrgn-lft-sm"
+                type="button"
+                onClick={handleReset}
+              >
+                <span className="glyphicon glyphicon-refresh"></span>
+                <span className="wb-inv">Reset search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Uncomment if you want to add the entries per page selector
+        <div className="col-md-4">
+          <div className="form-inline">
+            <label className="mrgn-rght-sm">Show</label>
+            <select
+              className="form-control"
+              value={entriesPerPage}
+              onChange={(e) => setEntriesPerPage(parseInt(e.target.value))}
+            >
+              <option value={10}>10</option>
+              <option value={25}>25</option>
+              <option value={50}>50</option>
+              <option value={0}>All</option>
+            </select>
+            <span className="mrgn-lft-sm">entries</span>
+          </div>
+        </div>
+        */}
+      </div>
     </div>
   );
 };

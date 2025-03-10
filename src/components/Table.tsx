@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Modal } from 'react-bootstrap';
 
 type SortOrder = 'asc' | 'desc' | null;
 interface SortConfig {
@@ -20,8 +19,6 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
   const totalPages = Math.ceil(data.length / entriesPerPage);
   const [copiedId, setCopiedId] = useState<number | null>(null);
   const [sortConfig, setSortConfig] = useState<SortConfig>({ key: 'date', direction: 'desc' });
-  const [showModal, setShowModal] = useState(false);
-  const [selectedRow, setSelectedRow] = useState<any>(null);
 
   const copyLink = async (row: any) => {
     try {
@@ -39,11 +36,6 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
     } catch (error) {
       console.error('Error copying link:', error);
     }
-  };
-
-  const handleRowClick = (row: any) => {
-    setSelectedRow(row);
-    setShowModal(true);
   };
 
   const sortData = (data: any[], key: string, direction: SortOrder) => {
@@ -115,7 +107,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
 </thead>
         <tbody>
           {paginatedData.map((row) => (
-            <tr key={row.id} onClick={() => handleRowClick(row)} style={{ cursor: 'pointer' }}>
+            <tr key={row.id}>
               <td>{row.title}</td>
               <td>
                 {new Date(row.date).toLocaleDateString('en-US', {
@@ -124,7 +116,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
                   day: 'numeric'
                 })}
               </td>
-              <td onClick={(e) => e.stopPropagation()}>
+              <td>
   <div className="btn-group">
     <button
       className="btn btn-primary btn-sm share blue-button"
@@ -148,84 +140,6 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
           ))}
         </tbody>
       </table>
-
-      {/* Modal */}
-      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedRow?.title}</Modal.Title>
-        </Modal.Header>
-
-<Modal.Body>
-  {selectedRow && (
-    <div className="p-3">
-      {selectedRow.what && (
-        <div className="mb-4">
-          <h5>What you need to know:</h5>
-          <div dangerouslySetInnerHTML={{ __html: selectedRow.what }} />
-        </div>
-      )}
-
-      <div className="row mb-3">
-        {selectedRow.category && (
-          <div className="col-md-6">
-            <strong>Category:</strong> {selectedRow.category}
-          </div>
-        )}
-        {selectedRow.date && (
-          <div className="col-md-6">
-            <strong>Date:</strong>{' '}
-            {new Date(selectedRow.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </div>
-        )}
-      </div>
-
-      {selectedRow.audience && (
-        <div className="mb-3">
-          <strong>Audience:</strong>{' '}
-          {Array.isArray(selectedRow.audience) ? selectedRow.audience.join(', ') : selectedRow.audience}
-        </div>
-      )}
-
-      {selectedRow.action && (
-        <div className="mb-3">
-          <strong>Action Required:</strong>
-          <div dangerouslySetInnerHTML={{ __html: selectedRow.action }} />
-        </div>
-      )}
-
-      {selectedRow.notes && (
-        <div className="mb-3">
-          <strong>Notes:</strong>
-          <div dangerouslySetInnerHTML={{ __html: selectedRow.notes }} />
-        </div>
-      )}
-
-      {selectedRow.resources && (
-        <div className="mb-3">
-          <strong>Resources:</strong>
-          <div dangerouslySetInnerHTML={{ __html: selectedRow.resources }} />
-        </div>
-      )}
-
-      {selectedRow.who && (
-        <div className="mb-3">
-          <strong>Who to Contact:</strong>
-          <div dangerouslySetInnerHTML={{ __html: selectedRow.who }} />
-        </div>
-      )}
-    </div>
-  )}
-</Modal.Body>
-        <Modal.Footer>
-          <button className="btn btn-secondary" onClick={() => setShowModal(false)}>
-            Close
-          </button>
-        </Modal.Footer>
-      </Modal>
 
       {/* Pagination Controls */}
       {entriesPerPage !== 0 && (
