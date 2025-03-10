@@ -44,12 +44,15 @@ export default function SidebarFilter({
     setOpenAccordion(openAccordion === section ? null : section);
   };
 
-  const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedOptions = Array.from(event.target.selectedOptions).map(option => option.value);
-    setSelectedCategories(selectedOptions);
+  const handleCategoryChange = (category: string) => {
+    const updatedCategories = selectedCategories.includes(category)
+      ? selectedCategories.filter((c) => c !== category)
+      : [...selectedCategories, category];
+    
+    setSelectedCategories(updatedCategories);
     applyFilters(
       searchTerm, 
-      selectedOptions, 
+      updatedCategories, 
       selectedAudiences, 
       selectedMonth, 
       selectedYear
@@ -107,23 +110,21 @@ export default function SidebarFilter({
             Filter by Category
           </summary>
           <div className="wb-filter-content">
-            <select 
-              multiple
-              className="form-control"
-              value={selectedCategories}
-              onChange={handleCategoryChange}
-              size={5}
-              aria-label="Select categories"
-            >
+            <div className="checkbox-columns">
               {categoryOptions.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
+                <div key={category} className="checkbox">
+                  <label htmlFor={`category-${category}`}>
+                    <input
+                      type="checkbox"
+                      id={`category-${category}`}
+                      checked={selectedCategories.includes(category)}
+                      onChange={() => handleCategoryChange(category)}
+                    />
+                    {category}
+                  </label>
+                </div>
               ))}
-            </select>
-            <small className="text-muted">
-              Hold Ctrl (Windows) or Command (Mac) to select multiple categories
-            </small>
+            </div>
           </div>
         </details>
 

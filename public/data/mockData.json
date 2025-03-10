@@ -21,6 +21,22 @@
       "notes": "<p>Departments will continue to receive the bi-weekly Time and Labour reports...</p>",
       "resources": "<p>The <a href='#'>Time and Labour Payable Status</a> describes the process...</p>",
       "who": "<p><a href='#'>Who to contact for pay system support</a></p>"
+    },
+    "25-04-02-communication1": {
+      "id": "25-04-02-communication1",
+      "title": "22Automated data clean-up in the Time and Labour module",
+      "category": "For action",
+      "date": "2025-04-02",
+      "audience": [
+        "Change agents",
+        "Compensation advisors (CAs)",
+        "Timekeepers"
+      ],
+      "what": "<ul><li>Public Services and Procurement Canada (PSPC) will be performing a data clean-up activity...</li></ul>",
+      "action": "<p>No action is required as this process is automated.</p>",
+      "notes": "<p>Departments will continue to receive the bi-weekly Time and Labour reports...</p>",
+      "resources": "<p>The <a href='#'>Time and Labour Payable Status</a> describes the process...</p>",
+      "who": "<p><a href='#'>Who to contact for pay system support</a></p>"
     }
   }
 }

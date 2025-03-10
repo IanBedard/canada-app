@@ -129,7 +129,7 @@ const Table: React.FC<TableProps> = ({ data, columns, entriesPerPage, currentPag
       <i className="bi bi-eye"></i>
     </button>
     <button
-      className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-outline-secondary share'}`}
+      className={`btn btn-sm ${copiedId === row.id ? 'btn-success share' : 'btn-default share'}`}
       onClick={() => copyLink(row)}
     >
       <i className={`bi ${copiedId === row.id ? 'bi-check-lg' : 'bi-link-45deg'}`}></i>
