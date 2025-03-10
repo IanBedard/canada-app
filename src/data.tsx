@@ -32,12 +32,8 @@ export const useData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Use local mock data in development
-        const response = await fetch(process.env.NODE_ENV === 'development' 
-          ? '/mockData.json'
-          : 'https://database-techcom.netlify.app/data.json'
-        );
-
+        const response = await fetch('/mockData.json');
+        
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
