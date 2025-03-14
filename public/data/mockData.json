@@ -6,37 +6,1165 @@
     { "title": "Audience", "data": "audience" }
   ],
   "data": {
-    "25-02-06-communication1": {
-      "id": "25-02-06-communication1",
-      "title": "Automated data clean-up in the Time and Labour module",
-      "category": "For information",
-      "date": "2025-02-06",
-      "audience": [
-        "Change agents",
-        "Compensation advisors (CAs)",
-        "Timekeepers"
-      ],
-      "what": "<ul><li>Public Services and Procurement Canada (PSPC) will be performing a data clean-up activity...</li></ul>",
-      "action": "<p>No action is required as this process is automated.</p>",
-      "notes": "<p>Departments will continue to receive the bi-weekly Time and Labour reports...</p>",
-      "resources": "<p>The <a href='#'>Time and Labour Payable Status</a> describes the process...</p>",
-      "who": "<p><a href='#'>Who to contact for pay system support</a></p>"
-    },
-    "25-04-02-communication1": {
-      "id": "25-04-02-communication1",
-      "title": "22Automated data clean-up in the Time and Labour module",
-      "category": "For action",
-      "date": "2025-04-02",
-      "audience": [
-        "Change agents",
-        "Compensation advisors (CAs)",
-        "Timekeepers"
-      ],
-      "what": "<ul><li>Public Services and Procurement Canada (PSPC) will be performing a data clean-up activity...</li></ul>",
-      "action": "<p>No action is required as this process is automated.</p>",
-      "notes": "<p>Departments will continue to receive the bi-weekly Time and Labour reports...</p>",
-      "resources": "<p>The <a href='#'>Time and Labour Payable Status</a> describes the process...</p>",
-      "who": "<p><a href='#'>Who to contact for pay system support</a></p>"
-    }
+   
+	  
+  "25-03-03-communication1": {
+    "id": "25-03-03-communication1",
+    "title": "Changes to the March 2025 pay processing schedule",
+    "category": "For action",
+    "date": "2025-03-03",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "\n\t\t\t  <ul>\n\t\t\t\t  <li>Public Services and Procurement Canada (PSPC) has made a change to the 2025 pay processing schedule.\n\t\t\t\t  \t<ul>\n\t\t\t\t\t\t<li>The 2024 amended tax slips scheduled for March 10, 2025, will now be available <strong>March 13, 2025</strong>.</li>\n\t\t\t\t\t</ul>\n\t\t\t\t  </li>\n\t\t\t  </ul>\n\t\t\t",
+    "action": "\n\t\t\t\t<p><abbr title=\"compensation advisors\">CAs</abbr> are asked to review the changes that have been made for the month of March in the pay processing schedule.</p>\n\t\t\t",
+    "notes": "",
+    "resources": "\n\t\t\t\t  <ul>\n\t\t\t\t\t  <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2025-eng.html\">Pay processing schedule – Year 2025</a> for detailed information about all pay-related processes and dates. </li>\n\t\t\t\t\t  <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/communications/calendrier-modifications-feuillets-renseignements-fiscaux-tax-slips-amendments-schedule-eng.html\">Tax slips amendments schedule for employees</a> to see when they are available. </li>\n\t\t\t\t  </ul>\t\t\t  \n\t\t\t",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-03-03-communication2": {
+    "id": "25-03-03-communication2",
+    "title": "Important information for employees about 2024 tax slips and tax filing",
+    "category": "For action",
+    "date": "2025-03-03",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals",
+      "Employees"
+    ],
+    "what": "\n\t\t\t  <ul>\n\t\t\t\t  <li>Public Services and Procurement Canada (PSPC) has completed issuing the 2024 tax slips to employees. </li>\n\t\t\t\t  <li>Amended 2024 tax slips may be issued should certain types of corrections be made. Therefore, it is important for employees to continue verifying their account for any amended tax slips prior to filing their tax return by the April 30, 2025, deadline.</li>\n\t\t\t\t  <li>Employees with access to the Government of Canada network can retrieve their electronic 2024 tax slips using the pay system or MyGCPay.</li>\n\t\t\t\t  <li>Former employees and those without access to the Government of Canada network can retrieve their amended slips using <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/mapayegc-ext-mygcpay-eng.html\">MyGCPay external access</a>.</li>\n\t\t\t  </ul>\n\t\t",
+    "action": "\n\t\t\t\t<p>Departments are encouraged to use the message template for employees (refer to the Notes section below) to inform them that amended tax slips may be issued.</p>\n\t\t\t",
+    "notes": "",
+    "resources": "\n\t\t\t  <p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-periode-declaration-tax-season-tools-eng.html\">Tax season toolbox</a> page on GCintranet provides information on tax season and year begin activities.</p>\n\t\t\t",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-06-02-communication3": {
+    "id": "25-06-02-communication3",
+    "title": "Automated data clean-up in the Time and Labour module ",
+    "category": "For information",
+    "date": "2025-02-06",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Timekeepers",
+      "Section 34 managers",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) will be performing a data clean-up activity in the pay system’s Time and Labour module that will change the status of outstanding un-actionable pay transactions to “closed”.</li>\n              <li>As of February 8, 2025, users will be able to view which transactions were closed as a result of this activity and the reason (see Resources below).</li>\n              <li>Following the clean-up activity, future un-actionable pay transactions in the Time and Labour module will be automatically closed by the pay system on a bi-weekly basis. </li>\n            </ul>",
+    "action": "<p>No action is required as this process is automated.</p>",
+    "notes": "",
+    "resources": "<p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/code-motif-gestion-temps-time-labour-reason-codes-eng.html\">Time and Labour Payable Status Reason Codes for Closed Transactions job aid</a> describes the ‘Closed’ Payable Time status and the different reason codes to identify why a transaction was changed to a ‘Closed’ status.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-04-02-communication4": {
+    "id": "25-04-02-communication4",
+    "title": "Department access schedule for 2024 tax slips",
+    "category": "For action",
+    "date": "2025-02-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) will begin issuing the 2024 tax slips to employees on February 21, 2025. </li>\n              <li>2024 tax slips in Phoenix Self Service, MyGCPay and MyGCPay external will be available to employees according to the department access schedule (refer to the Resources section below).</li>\n              <li>Employees using online access to retrieve their 2024 tax slips should only do so as of the date scheduled for their department or agency. The staggered approach by department ensures an efficient roll-out of tax slips and reduces the potential congestion on the systems due to the high volume of users.</li>\n              <li>Employees registered with Canada Revenue Agency’s or Revenu Québec’s online services will be able to access their 2024 tax information through “MyAccount” by March 3, 2025.</li>\n            </ul>",
+    "action": "<p>Departments and agencies are encouraged to review the department access schedule for 2024 tax slips and communicate the access date to their employees.</p>",
+    "notes": "",
+    "resources": "<ul>\n              <li>For information on how and when to access 2024 tax slips, visit:\n                <ul>\n                  <li> <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/systeme-paye-employes-pay-system-employees/feuillet-impot-tax-slip-eng.html\">Accessing and managing your tax slips</a></li>\n                  <li> <a href=\"https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/tax-season-information/departmental-access-schedule-tax-slips.html\">Department access schedule for 2024 tax slips</a></li>\n                </ul>\n              </li>\n              <li>For additional resources to help navigate tax season, refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-periode-declaration-tax-season-tools-eng.html\">Tax season toolbox</a>.</li>\n              <li>Refer to the <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/paye-talon-stub-pay-eng.html\">How public service pay works</a> page for general information about pay and tax slips and to learn more about <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/lire-paye-talon-read-pay-stub-eng.html#YTD\">how to compare year-to-date amounts on a pay stub with tax slips</a>.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-31-01-communication5": {
+    "id": "25-31-01-communication5",
+    "title": "Changes made to the monthly pay period calendar for 2025",
+    "category": "For information",
+    "date": "2025-01-31",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users that changes were made to Confirm dates for monthly pay periods of 2025.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/2025-calendrier-periodes-paye-pay-periods-calendar-2025-eng.html\">2025 pay period calendar</a> for information about bi-weekly and monthly pay periods.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-30-01-communication6": {
+    "id": "25-30-01-communication6",
+    "title": "Important dates regarding the reversal and cancellation process",
+    "category": "For information",
+    "date": "2025-01-30",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<p>As a result of fiscal year end 2024-2025 requirements, the final date to action reversals in the Standard Payment System (SPS) and to process the cancellation of payments in the pay system is March 23, 2025.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information about the reversal and cancellation process, send your questions to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca\">Financial and Payroll Accounting Division (FPAD)</a>.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-17-01-communication7": {
+    "id": "25-17-01-communication7",
+    "title": "Changes to the pay processing calendar for pay period BW2502 and MM2501",
+    "category": "For information",
+    "date": "2025-01-17",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay period 2 (<strong>BW2502</strong>) and monthly pay period 1 (<strong>MM2501</strong>).</li>\n              <li>The following changes have been made to the Section 33 window and <strong>MM2501</strong>:\n                <ul>\n                  <li>The off-cycle #3 Section 33 window will be from 9:00 am (<abbr title=\"eastern time\">ET</abbr>) to 12:00 pm (<abbr title=\"eastern time\">ET</abbr>) on Monday, January 20, 2025.</li>\n                  <li>The Create Pay Transactions, One-time payment files (E23 .CSV file) and payline access cut-off will be at 11:00 pm on Friday, January 17, 2025, for off-cycle #3.</li>\n                  <li>The Create Pay Transactions (E129), One-time payment files (E23 .CSV file) payline access and job lock cut-off will be at 9:00 pm on Monday, January 20, 2025, for on-cycle.</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2025-eng.html\">Pay processing schedule – Year 2025</a> for detailed information about all pay-related processes and dates. </li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows <abbr title=\"Compensation advisors\">CA</abbr>s to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-16-01-communication8": {
+    "id": "25-16-01-communication8",
+    "title": "Archived compensation directives ",
+    "category": "For information",
+    "date": "2025-01-16",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Following inquiries received from the compensation community, effective immediately, archived compensation directives prior to 2009 have been restored to the GCintranet.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Find a list of the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/dr-cd/index-eng.html\">compensation directives</a> put in place to provide special instructions and guidance on operations to support the compensation community, including those that have been archived for reference and research purposes.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-13-01-communication9": {
+    "id": "25-13-01-communication9",
+    "title": "MyGCPay External available for all users",
+    "category": "For information",
+    "date": "2025-01-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) will launch MyGCPay External Access for all Government of Canada employees on January 20, 2025.</li>\n              <li>MyGCPay External will allow current and former federal government employees to securely access their pay and benefits from outside of the Government of Canada network. Departments serviced by MyGCHR will also have external access to their human resource information.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Visit <a href=\"https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/pay-centre-resources/mygcpay/external-access.html?utm_campaign=pspc-spac-mygcpay-mapayegc&amp;utm_medium=vanity-url&amp;utm_source=canada-ca_mygcpay-external\">MyGCPay external access – Canada.ca</a> to access the application and for more information on how to register. </li>\n              <li>Refer to the <a href=\"https://www.gcpedia.gc.ca/wiki/Benefit_Letter_Templates\">Benefit Letter Templates</a> page for more information to help support employees. </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-10-01-communication10": {
+    "id": "25-10-01-communication10",
+    "title": "Experiencing issues with Employee Self Service for the Public Service Health Care Plan",
+    "category": "For information",
+    "date": "2025-01-10",
+    "audience": [
+      "Change agents",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) is aware that some employees are experiencing issues when trying to enroll or change coverage in the Public Service Health Care Plan (PSHCP) using Employee Self Service in the pay system.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> is working on a solution and will provide an update once the issue is resolved.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-10-01-communication11": {
+    "id": "25-10-01-communication11",
+    "title": "International mailing addresses in the pay system",
+    "category": "For information",
+    "date": "2025-01-10",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <p></p>\n              <li>On November 30, 2024, the Standard Pay System (SPS) payment file interface was modified to improve address data received from the pay system. Essentially, pay accounts with “ZZ” in the address field in the pay system will be blank in <abbr title=\"Standard Pay System\">SPS</abbr> when the data transfers between systems.</li>\n              <p></p>\n              <p></p>\n              <li>There is no impact on <abbr title=\"compensation advisors\">CAs</abbr>. However, this communication serves as a reminder that cheque payments with an international mailing address (ZZ) in the pay system will continue to be rejected in <abbr title=\"Standard Pay System\">SPS</abbr>.</li>\n              <p></p>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s continue to be responsible for the reissuing of the cancelled payments once direct deposit has been added in the pay system for these accounts.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <p></p>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/cheques-depots-direct-emission-paiements-cheques-direct-deposit-issue-eng.html\">Cheques and direct deposits: Post-issue procedures</a> for more information on missing or undeliverable address for paper cheques cancelled by the Imaging and Receiver General Operations Directorate (IRGOD).</li>\n              <p></p>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s can continue to run the R355 Review <abbr title=\"Standard Pay System\">SPS</abbr> Messages <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-aids/interrogations-queries-eng.html\">query</a> to view accounts that received an undeliverable address message from <abbr title=\"Standard Pay System\">SPS</abbr>.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "25-08-01-communication12": {
+    "id": "25-08-01-communication12",
+    "title": "Special YEPO2021 scheduled on January 14, 2025",
+    "category": "For action",
+    "date": "2025-01-08",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform users that a YEPO2021 will be processed on January 14, 2025, using the pay period end date of December 23, 2021.</li>\n              <li>All active YEPO2021 transactions entered prior to January 1, 2025, in the Pay Sheet Upload Holding Table (PSHUP) will be processed on January 14, 2025, and a net overpayment will be created.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/2025-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"Year-end processing previous year\">YEPO</abbr> schedule - Year 2025</a> for the Pay run ID and Pay period end date for each <abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"Year-end processing previous year\">YEPO</abbr>.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/transactions-paye-paysheet-transactions-eng.html\">Update Paysheet Transactions</a> procedure is used by <abbr title=\"compensation advisors\">CAs</abbr> to prevent a transaction on the Pay Sheet Upload Holding Table (PSHUP) from loading to payline. </li>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/creation-manuelle-trop-paye-annees-2015-aujourdhui-manual-creation-overpayment-2015-current-year-eng.html\">Manual Creation of an Overpayment: Previous and Current Years (2015 up to current year)</a> procedure to see how to record an overpayment for previous and current years.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/depannage-PSHUP-troubleshooting-eng.html\"><abbr title=\"Pay Sheet Upload Holding Table\">PSHUP</abbr> troubleshooting</a> provides <abbr title=\"compensation advisors\">CAs</abbr> with a tool for working with <abbr title=\"Pay Sheet Upload Holding Table\">PSHUP</abbr> queries, for investigating what happened to transactions that have disappeared, or for determining where a transaction originated.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/prevention-des-trop-payes-preventing-for-overpayments-eng.html\">Preventing processing errors for prior year overpayments</a> job aid provides <abbr title=\"compensation advisors\">CAs</abbr> with factors to consider when processing overpayments for prior years.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool  (E129 Create Pay Transactions)</a> provides <abbr title=\"compensation advisors\">CAs</abbr> with  step-by-step instructions to input a transaction in the Create Pay Transaction.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  
+},
+	  
+  "24-19-12-communication1": {
+    "id": "24-19-12-communication1",
+    "title": "Changes to the first pay of the 2025 calendar year",
+    "category": "For information",
+    "date": "2024-12-19",
+    "audience": [
+      "Change agents",
+      "Employees"
+    ],
+    "what": "\n\t\t\t\t<p>It is important for employees to be aware of the following statutory deductions that could affect their net pay and result in a lower net pay amount for the first pay of the new year dated January 15, 2025, that will differ from their last pay on December 31, 2024:</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>federal income tax rates and personal tax credits</li>\n\t\t\t\t\t<li>provincial and territorial income tax rates and personal tax credits</li>\n\t\t\t\t\t<li>employment insurance (EI)</li>\n\t\t\t\t\t<li>Québec Parental Insurance Plan (QPIP)</li>\n\t\t\t\t\t<li>Canada Pension Plan (CPP)</li>\n\t\t\t\t\t<li>Québec Pension Plan (QPP)</li>\n\t\t\t\t</ul>\t\t\t\t\n\t\t\t",
+    "action": "",
+    "notes": "",
+    "resources": "\n\t\t\t\t  <p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/infographie-infographics/index-eng.html?infographic=premiere-paye-change-first-pay\">Why did my net pay change with the first pay of the new calendar year?</a> visual aid provides tips on why amounts may have changed on their first pay cheque in the new year.</p>\n\t\t\t  ",
+    "who": "\n\t\t\t\t  <p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-18-12-communication2": {
+    "id": "24-18-12-communication2",
+    "title": "Scheduled Time and Labour deadlines during the holiday season",
+    "category": "For action",
+    "date": "2024-12-18",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers",
+      "Section 34 managers"
+    ],
+    "what": "\n\t\t\t\t<p>Public Services and Procurement Canada (PSPC) would like to remind users of the scheduled deadlines for the last pay period (BW2427) of 2024, and provide those for pay period 1 of 2025 (BW2501) that will occur during the holiday season.</p>\n\t\t\t\t<p><strong>Pay cut-offs for BW2427</strong></p>\n\t\t\t\t<ul>\n\t\t\t\t<li>Employees must complete Time and Labour transactions for pay period 27 of 2024, by Thursday, December 19, 2024, at 9:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t<li>Time and Labour Section 34 transactions for pay period 27 of 2024, must be approved by Friday, December 20, 2024, at 2:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t<li>Time and Labour Section 33 transactions for pay period 27 of 2024, must be authorized by Friday, December 20, 2024, at 9:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t</ul>\n\t\t\t\t<p><strong>Pay cut-offs for BW2501</strong></p>\n\t\t\t\t<ul>\n\t\t\t\t<li>Employees must complete Time and Labour transactions for pay period 1 of 2025, by Thursday, January 2, 2025, at 9:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t<li>Time and Labour Section 34 transactions for pay period 1 of 2025, must be approved by Friday, January 3, 2025, at 2:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t<li>Time and Labour Section 33 transactions for pay period 1 of 2025, must be authorized by Friday, January 3, 2025, at 9:00 pm (<abbr title=\"eastern time\">ET</abbr>).</li>\n\t\t\t\t</ul>\n\t\t\t",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedules</a> for detailed information about all pay-related processes and dates.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-16-12-communication3": {
+    "id": "24-16-12-communication3",
+    "title": "Update of the 2025 federal, provincial and territorial net claim amounts in the pay system",
+    "category": "For action",
+    "date": "2024-12-16",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "\n\t\t\t  \t<ul>\n\t\t\t\t  \t<li>On December 30, 2024, the federal, provincial and territorial net claim amounts for 2025 will be updated on the Update Employee Tax Data page in the pay system.</li>\n\t\t\t\t\t<li>Following this date, pay accounts will be automatically updated in the pay system, therefore, no action is required.</li>\n\t\t\t\t\t<li>However, if hire or rehire transactions are entered<strong> after December 29, 2024</strong>, once the net claim amounts have been updated, <abbr title=\"Compensation advisors\">CA</abbr>s must manually enter net claim amounts for 2024  and 2025 (refer to the Actions required section below) in order to have tax deductions calculated correctly.</li>\n\t\t\t\t</ul>\n\t\t\t",
+    "action": "\n\t\t\t  \t<p><abbr title=\"Compensation advisors\">CA</abbr>s must manually enter two rows on the Update Employee Tax Data page when a <strong>new hire</strong> or <strong>rehire</strong> is entered after December 29, 2024, and has an effective date before January 1, 2025, for:</p>\n\t\t\t\t<ul>\n\t\t\t\t  \t<li>the federal and provincial or territorial net claim amounts for the current year (2024); </li>\n\t\t\t\t\t<li>the federal and  provincial or territorial net claim amounts for the new year (2025).</li>\n\t\t\t\t</ul>\n\t\t\t",
+    "notes": "",
+    "resources": "\n\t\t\t  <ul>\n\t\t\t\t  <li>Consult the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/donnees-fiscales-repartition-impots-employee-tax-data-distribution-eng.html\">Update Employee Tax Data and Update Tax Distribution pages in Phoenix</a> procedure for instructions on how to update tax information in the pay system. </li>\n\t\t\t\t  <li>Refer to <a href=\"https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas/t4127-jan/t4127-jan-payroll-deductions-formulas-computer-programs.html#toc66:~:text=18%2C052-,Table%208.2%20Other%20rates%20and%20amounts%20for%202025,-Table%208.2%20Other\">Table&nbsp;8.2 Other rates and amounts for 2025</a> on the Payroll Deductions Formulas webpage of the Canada  Revenue Agency for all the net claim amounts for 2025.</li>\n\t\t\t</ul>\n\t\t",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-13-12-communication4": {
+    "id": "24-13-12-communication4",
+    "title": "Scheduled pay cut-offs during the holiday season",
+    "category": "For action",
+    "date": "2024-12-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the scheduled deadlines for pay period 27 (BW2427) and monthly pay period 12 (MM2412) during the holiday season.</p>\n            <p><strong>Pay cut-offs</strong>:</p>\n            <ul> \n              <li>Pay lines and Create Pay Transactions for pay period 27 will be locked on Friday, December 20, 2024, at 11:00 pm (<abbr title=\"eastern time\">ET</abbr>) for the off-cycle #3.</li>\n              <li>The off-cycle #3 Section 33 window will be from 9:00 am (<abbr title=\"eastern time\">ET</abbr>) to 12:00 pm (<abbr title=\"eastern time\">ET</abbr>) on Monday, December 23, 2024.</li>\n              <li>The on-cycle Section 33 window will be from 9:00 am (<abbr title=\"eastern time\">ET</abbr>) to 12:00 pm (<abbr title=\"eastern time\">ET</abbr>) on Tuesday, December 24, 2024.</li>\n              <li>The Job Lock for pay period 27 will be at 5:00 pm (<abbr title=\"eastern time\">ET</abbr>) on Monday, December 23, 2024.</li>\n              <li>The off-cycle #4 Section 33 window will be from 1:00 pm (<abbr title=\"eastern time\">ET</abbr>) to 2:30 pm (<abbr title=\"eastern time\">ET</abbr>) on Friday, December 27, 2024.</li>\n            </ul>\n\t\t\t",
+    "action": "<p><strong>Action required for <abbr title=\"Compensation advisors\">CA</abbr>s:</strong></p>\n            <p>Complete E23 one-time payment file (.CSV) bulk entries for pay period 27 must be completed by the Friday, December 20, 2024, off-cycle cut-off.</p>\n            <p><strong>Action required for Section 33 authorizers:</strong></p>\n            <p>Complete payment approvals by the on-cycle and off-cycle cut-offs provided in the 2024 Pay processing schedule.</p>",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">Pay processing schedule – Year 2024</a> for detailed information about all pay-related processes and dates.</li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows <abbr title=\"Compensation advisors\">CA</abbr>s to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-11-12-communication5": {
+    "id": "24-11-12-communication5",
+    "title": "Payment reference numbers missing from payment return file",
+    "category": "For information",
+    "date": "2024-12-11",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) is aware that the payment reference number (PRN) was excluded from the BW2426 off-cycle payment return file received from the Standard Payment System (SPS).</p>\n              </li>\n              <li>\n                <p>As a result, <abbr title=\"compensation advisors\">CAs</abbr> will not be able to process a payment reversal until an updated payment return file, with the unique <abbr title=\"payment reference numbers\">PRNs</abbr> included, is uploaded to the pay system.</p>\n              </li>\n              <li>\n                <p><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will provide an update once new file is uploaded to the pay system.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-04-12-communication6": {
+    "id": "24-04-12-communication6",
+    "title": "New version of the Direct Deposits – Inactive query is available",
+    "category": "For information",
+    "date": "2024-12-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>In response to the Canada Post labour disruption, Public Services and Procurement Canada (PSPC) added a new version of the query, R27 PW_INACTIVE_DIRECT_DEPOSIT, to the PW On-Demand Report in the pay system.</p>\n              </li>\n              <li>\n                <p>Effective immediately, the query identifies <strong>all </strong>active employees whose direct deposit information is inactive.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-aids/interrogations-queries-eng.html\">Queries</a> job aid provides a searchable list of reports that are available in the pay system.</p>\n            <ul>\n              <li>\n                <p>Follow menu path: Main Menu &gt; Reporting Tools &gt; PW On Demand Reports &gt; Pay Data &gt; Direct Deposits – Inactive, to identify active employees whose direct deposit information is inactive.</p>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-02-12-communication7": {
+    "id": "24-02-12-communication7",
+    "title": "Warning error message when processing eligibility log file report for the Public Service Dental Care Plan ",
+    "category": "For information",
+    "date": "2024-12-02",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) is aware that <abbr title=\"Compensation advisors\">CA</abbr>s are receiving a warning error message when processing cases where an employee requires a transfer from one Public Service Dental Care Plan (PSDCP) contract to another.</p>\n              </li>\n              <li>\n                <p>This warning error message specifically appears when processing a transfer from the Public Service Alliance of Canada (<abbr title=\"Public Service Aliance of Canada\">PSAC</abbr>) plan to the National Joint Council (NJC), or vice versa.</p>\n              </li>\n              <li>\n                <p>Effective November 2024, <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> Compensation Sector – Pay will be taking over the responsibility of transferring dental care plans for both <abbr title=\"Public Service Aliance of Canada\">PSAC</abbr> and <abbr title=\"National Joint Council\">NJC</abbr>.</p>\n              </li>\n              <li>\n                <p>The job aid found in the Resources section below has been temporarily adjusted until the removal of the warning message is complete.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/soins-dentaires-erreurs-phenix-dental-care-pheonix-error-eng.html\">Public Service Dental Care Plan: Phoenix error codes log file report from eligibility weekly file</a> has been revised to include a disclosure to disregard the warning error messages when running reports in the pay system for the <abbr title=\"Public Service Dental Care Plan\">PSDCP</abbr> eligibility that require corrective measure for members’ accounts. </p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-02-12-communication8": {
+    "id": "24-02-12-communication8",
+    "title": "Entering dental care plan numbers in the pay system and CWA",
+    "category": "For information",
+    "date": "2024-12-02",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) would like to remind <abbr title=\"Compensation advisors\">CA</abbr>s that they <strong>must continue</strong> to enter components in the pay system and Compensation Web Applications (CWA) when enrolling an eligible employee in the Public Service Dental Care Plan (PSDCP).</p>\n              </li>\n              <li>\n                <p>The component distinguishes employees from the following representation groups and continues to be used by <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> and the plan administrator <strong>for reporting purposes</strong>:</p>\n                <ul>\n                  <li>\n                    <p>Public Service Alliance of Canada (PSAC) (plan&nbsp;55666 in <abbr title=\"Compensation Web Applications\">CWA</abbr> and plans&nbsp;DCP001 and DCP01E in the pay system)</p>\n                  </li>\n                  <li>National Joint Council (NJC) (plan&nbsp;55555 in <abbr title=\"Compensation Web Applications\">CWA</abbr> and plans&nbsp;DCP002 and DCP02E in the pay system) </li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/types-regimes-plan-types-eng.html\">Health benefits: Plan types and benefit plans</a> job aid provides the benefit plan to enter for each plan type based on the type of coverage.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-03-12-communication9": {
+    "id": "24-03-12-communication9",
+    "title": "Change to the pay address in the pay system ",
+    "category": "For action",
+    "date": "2024-12-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Effective December 14, 2024, Public Services and Procurement Canada (PSPC) will be updating the organization’s mailing address in the pay system to 11 Laurier Street, Gatineau, Quebec.</p>\n              </li>\n              <li>\n                <p>This is a change to the pay address only. Employees are <strong>not</strong> impacted and there are no tax implications as a result of this change.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-03-12-communication10": {
+    "id": "24-03-12-communication10",
+    "title": "Changes to the pay processing calendar for pay period BW2501, BW2502 and MM2501",
+    "category": "For information",
+    "date": "2024-12-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay periods 1 and 2 (BW2501, BW2502) and monthly pay period 1 (MM2501).</p>\n            <ul>\n              <li>The following change has been made to the&nbsp;<strong>BW2501</strong> Section&nbsp;33 window:\n                <ul>\n                  <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Monday, January 6, 2025. </li>\n                </ul>\n              </li>\n              <li>The following change has been made to the&nbsp;<strong>BW2502</strong> Section&nbsp;33 window and <strong>MM2501</strong>:\n                <ul>\n                  <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Tuesday, January 21, 2025. </li>\n                </ul>\n              </li>\n              <li>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 .CSV file) and job lock are outlined in the 2025 pay processing schedule (refer to the Resources section below).</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2025-eng.html\">Pay processing schedule – Year 2025</a> for detailed information about all pay-related processes and dates.</li>\n              <li> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a>&nbsp;allows <abbr title=\"Compensation advisors\">CA</abbr>s&nbsp;to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-25-11-communication11": {
+    "id": "24-25-11-communication11",
+    "title": "Employees with paper pay cheques impacted by the Canada Post labour disruption ",
+    "category": "For information",
+    "date": "2024-11-25",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>In response to the Canada Post labour disruption, Public Services and Procurement Canada (PSPC) has put in place a temporary measure for federal government employees that receive a paper pay cheque.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will hold paper pay cheques for affected employees over the course of the Canada Post labour disruption. All paper pay cheques will be delivered following the end of the labour disruption, once mail services resume.</li>\n              <li>In the interim, affected employees are encouraged to enroll in direct deposit to minimize the impact of the current disruption to mail services.</li>\n              <li>In addition, employees that choose to enroll in direct deposit during the labour disruption can request to have a duplicate payment issued by direct deposit to replace a payment issued as a paper cheque (see the Notes section for further details). </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Find out how employees can add or change their <a href=\"https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/access-update-pay-details/pay-changes-in-your-life/changing-your-personal-information.html#Direct_deposit\">Direct deposit</a> information in the pay system.</li>\n              <li> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/forms/text/recherche-search-eng.html\">Search for forms</a> in the catalogue inventory to find the PWGSC-TPSGC&nbsp;8437 direct deposit enrollment request form and the PWGSC-TPSGC&nbsp;535 undertaking and indemnity (for cheques issued by the Receiver General) form.</li>\n              <li>Employees whose department or agency is served by the Pay Centre can reach out to the <a href=\"https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/pay-centre-resources/contact-client-contact-centre.html\">Pay and Benefits Client Contact Centre</a> to get assistance and to submit the forms necessary to issue a duplicate payment.</li>\n              <li>Departmental <abbr title=\"Compensation advisors\">CA</abbr>s (not served by the Pay Centre) can reach out to the <a href=\"mailto:TPSGC.DGAPSRSoutienPayeOtt-PABCSOttPaySupport.PWGSC@tpsgc-pwgsc.gc.ca?subject=Request%20for%20duplicate%20payment%20–%20Canada%20Post%20labour%20dispute\">Ottawa Pay Support team</a> to submit the forms necessary to issue a <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support/copie-soutien-support-duplicate-eng.html\">duplicate payment</a> for their employee. <abbr title=\"Compensation advisors\">CA</abbr>s must indicate clearly in their email the subject line “Request for duplicate payment – Canada Post labour dispute” and in the body “Request to issue a duplicate payment by direct deposit because the regular paper pay cheque was not received due to the Canada Post labour dispute.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-22-11-communication12": {
+    "id": "24-22-11-communication12",
+    "title": "Important deadlines and tasks for the 2024 tax season",
+    "category": "For action",
+    "date": "2024-11-22",
+    "audience": [
+      "Change agents",
+      "Section 34 managers",
+      "Section 33 authorizers",
+      "Timekeepers",
+      "Employees"
+    ],
+    "what": "Public Services and Procurement Canada (PSPC) has visual aids available for use by departments and agencies that provide important information related to 2024 tax season.",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The following visual aids can be found on the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-periode-declaration-tax-season-tools-eng.html\">Tax season toolbox</a>:</p>\n            <ul>\n              <li>The <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/infographie-infographics/index-eng.html?infographic=echeances-hp-cnp-2019-lwop-pt-deadlines\">Deadlines for payable time and leave without pay in the pay system</a> visual aid provides useful tips along with the December deadlines that employees, managers and finance officers must adhere to in order for time and leave without pay to be reflected on the original 2024 tax slips.</li>\n              <li>The <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/infographie-infographics/index-eng.html?infographic=liste-de-controle-2020-checklist\">Tax season employee checklist</a> provides tasks for employees to complete to prepare for the 2024 tax season.</li>\n              <li>The <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/infographie-infographics/index-eng.html?infographic=liste-de-controle-2020-checklist34\">Tax season section 34 manager checklist</a> provides tasks for managers to complete for the 2024 tax season.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-20-11-communication13": {
+    "id": "24-20-11-communication13",
+    "title": "YEPO files executed in December 2024 transmittal to tax agencies in January 2025",
+    "category": "For information",
+    "date": "2024-11-20",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform the compensation community that the planned YEPOs to be executed in December 2024 will only be transmitted to Canada Revenue Agency (CRA) and Revenu Québec (RQ) after January 12, 2025. </li>\n              <li>This is due to a <abbr title=\"Canada Revenue Agency\">CRA</abbr> system shutdown scheduled from December 2, 2024, to January 12, 2025. </li>\n              <li>The following <abbr title=\"year-end processing current year\">YEPO</abbr> files will be executed as planned, and transmitted to the <abbr title=\"Canada Revenue Agency\">CRA</abbr> and <abbr title=\"Revenu Québec\">RQ</abbr> after January 12, 2025:\n                <ul>\n                  <li>YEPO2023 on December 2, 2024 </li>\n                  <li>YEPO2018 on December 4, 2024 </li>\n                  <li>YEPO2016 on December 6, 2024</li>\n                  <li>YEPO2022 on December 16, 2024</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">2024 pay processing schedule</a> provides detailed information about all pay-related processes and dates for the 2024 calendar year.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\">YEPE / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule</a> provides detailed information about year-end processing schedules of current and previous years.</li>\n              <li> The <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/communications/calendrier-modifications-feuillets-renseignements-fiscaux-tax-slips-amendments-schedule-eng.html\">Tax slip amendments schedule for employees</a> shows when amended tax slips are available for viewing in the pay system.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-13-11-communication14": {
+    "id": "24-13-11-communication14",
+    "title": "Special YEPO2018 scheduled on November 22, 2024",
+    "category": "For action",
+    "date": "2024-11-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform users that a <abbr title=\"year-end processing previous year\">YEPO</abbr>2018 will be processed on November 22, 2024, using the pay period end date of December 29, 2018.</li>\n              <li>All active <abbr title=\"year-end processing previous year\">YEPO</abbr>2018 transactions in the Pay Sheet Upload Holding Table (PSHUP) will be processed on November 22, 2024.</li>\n              <li>The <abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule – Year 2024 has been modified to reflect the special <abbr title=\"year-end processing previous year\">YEPO</abbr>2018 (refer to the Resources section below).</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/2024-eng.html\"><abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule - Year 2024</a> for the Pay run ID and Pay period end date for each <abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr>.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/transactions-paye-paysheet-transactions-eng.html\">Update Paysheet Transactions</a> procedure is used by <abbr title=\"Compensation advisors\">CAs</abbr> to prevent a transaction on the Pay Sheet Upload Holding Table (PSHUP) from loading to payline. </li>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/creation-manuelle-trop-paye-annees-2015-aujourdhui-manual-creation-overpayment-2015-current-year-eng.html\">Manual Creation of an Overpayment: Previous and Current Years (2015 up to current year)</a> procedure to see how to record an overpayment for previous and current years.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/depannage-PSHUP-troubleshooting-eng.html\">PSHUP troubleshooting</a> provides <abbr title=\"Compensation advisors\">CAs</abbr> with a tool for working with PSHUP queries, for investigating what happened to transactions that have disappeared, or for determining where a transaction originated.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/prevention-des-trop-payes-preventing-for-overpayments-eng.html\">Preventing processing errors for prior year overpayments</a> job aid provides <abbr title=\"Compensation advisors\">CAs</abbr> with factors to consider when processing overpayments for prior years.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> provides <abbr title=\"Compensation advisors\">CAs</abbr> with step-by-step instructions to input a transaction in the Create Pay Transaction page.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-07-11-communication15": {
+    "id": "24-07-11-communication15",
+    "title": "Pay period calendar, YEPE / YEPO schedule and pay processing schedule for 2025",
+    "category": "For information",
+    "date": "2024-11-07",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has created the pay period calendar, <abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule and the pay processing schedule for the year 2025 calendar (see Resources section below).</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay period calendar</a>&nbsp;provides biweekly    and monthly pay period for the calendar year. </li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedule</a>&nbsp;provides detailed    information about all pay-related processes and dates. </li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\">YEPE / YEPO&nbsp;schedule</a>&nbsp;provides  detailed information about year-end processing schedules of current and  previous years.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-01-11-communication16": {
+    "id": "24-01-11-communication16",
+    "title": "Important dates regarding the reversal and cancellation process",
+    "category": "For information",
+    "date": "2024-11-01",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<p>As a result of the 2024 calendar year end processing requirements, the final date to action reversals in the Standard Payment System (SPS) and to process the cancellation of payments in the pay system is December 29, 2024. </p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information about the reversal and cancellation process, send your questions to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca\">Financial and Payroll Accounting Division (FPAD)</a>.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-29-10-communication17": {
+    "id": "24-29-10-communication17",
+    "title": "Direct deposit enrollment for active employees",
+    "category": "For information",
+    "date": "2024-10-29",
+    "audience": [
+      "Change agents"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (<abbr title=\"Public Services and Procurement Canada\">PSPC</abbr>) has identified a number of active employees who are still being paid by paper cheque.</li>\n              <li>To support departments in anticipation of a potential Canada Post disruption that could affect mail delivery, <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> has provided to Heads of Human Resources a report listing active affected employees, including those who are on maternity or parental leave without pay, along with guidance to provide to employees and encourage them to register for direct deposit.</li>\n              <li>Using direct deposit is a condition of employment, and it is the most reliable, secure, and convenient method for receiving pay.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-24-10-communication18": {
+    "id": "24-24-10-communication18",
+    "title": "Extension to basic pay and leave without pay transactions in Time and Labour for pay period 23",
+    "category": "For information",
+    "date": "2024-10-24",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers",
+      "Section 34 managers",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform the community that there will be an extension to the approval for basic pay (or equivalent) and leave without pay (LWOP) transactions in Time and Labour.</li>\n              <li>The following changes have been made to the transactions for pay period 23:</li>\n              <ul>\n                <li>The cut-off for <strong>employee input</strong> will be 12:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Tuesday, October 29, 2024.</li>\n                <li>The cut-off for <strong>section 34 managers approval</strong> will be 12:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Wednesday, October 30, 2024.</li>\n                <li>The cut-off for <strong>section 33 authorization</strong> will be 4:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Wednesday, October 30, 2024.</li>\n              </ul>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-23-10-communication19": {
+    "id": "24-23-10-communication19",
+    "title": "Benefits Status on the Current Benefits Summary page ",
+    "category": "For information",
+    "date": "2024-10-23",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform <abbr title=\"compensation advisors\">CA</abbr>s that <strong>some users</strong> may not see the current Primary Employee Record when selecting an employee record on the Current Benefits Summary page in the pay system.</li>\n              <li>Information provided for employee records is accurate. However, the Current Benefits Summary page may not return the current Primary Employee Record. Therefore, <abbr title=\"compensation advisors\">CA</abbr>s must verify the Benefits Status field to ensure they are viewing the active record.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will provide an update once the issue is resolved.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-22-10-communication20": {
+    "id": "24-22-10-communication20",
+    "title": "Technical upgrade of the pay system completed ",
+    "category": "Update",
+    "date": "2024-10-22",
+    "audience": [
+      "Change agents",
+      "Phoenix users"
+    ],
+    "what": "<ul>\n              <li>As a follow up to the <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/technique-technical/index-eng.html#10-01-24-attachment1-modal\">communication dated October 1, 2024</a>, the technical upgrade to the pay system that started on Friday, October 18, 2024, has successfully completed as of this morning, Tuesday, October 22, 2024.</li>\n              <li>Affected pay procedures and job aids (see Resources below) have been updated to show how the search results page will now display following the PeopleTools upgrade.</li>\n              <li>Access to the Phoenix pay system, MyGCPay and HR applications has been restored as of 8:00 a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) this morning, Tuesday, October 22, 2024. </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The following pay procedures and job aids have had new screen captures inserted for the updated search page as a result of the PeopleTools upgrade:</p>\n            <ul>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/fermeture-heure-payable-closing-payable-time-eng.html\">Closing invalid payable time transactions in Adjust Paid Time in Time and Labour</a></li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/certificat-ai-aild-di-ltd-certificate-eng.html\">Correcting invalid disability insurance or long-term disability certificate numbers</a></li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a></li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/erreurs-regime-soins-sante-heath-care-plan-errors-eng.html\">Public Service Health Care Plan: Data errors in log file</a></li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/changement-non-cotisant-changing-non-contributor-eng.html\">Public Service Superannuation Act: Changing from non-contributor to contributor</a></li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-15-10-communication21": {
+    "id": "24-15-10-communication21",
+    "title": "Deadline to complete validation activities related to the inactivation of the British Columbia Medical Services Plan from the pay system ",
+    "category": "For action",
+    "date": "2024-10-15",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>As previously communicated, Public Services and Procurement Canada (PSPC) has ceased collection of British Columbia Medical Services plan (BC MSP) premiums since December 1, 2019. </li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> asks <abbr title=\"Compensation advisors\">CAs</abbr> to complete validation activities for pay accounts in connection with the <abbr title=\"British Columbia Medical Services plan\">BC MSP</abbr> by October 21, 2024.</li>\n              <li>Effective November 30, 2024, deduction code&nbsp;692 and the related MED001 and MED01P codes in the Benefit Plan Table will be removed from the pay system.</li>\n              <li>In addition, PSPC will be closing the Group Account for <abbr title=\"British Columbia Medical Services plan\">BC MSP</abbr> as of December 31, 2024. Any balance of funds remaining in the Group Account will be refunded to employees that were active at the time of reconciliation in 2020 and remain active at the time of reimbursement on November 20, 2024 <strong>.</strong></li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-08-10-communication22": {
+    "id": "24-08-10-communication22",
+    "title": "Managing pay system access",
+    "category": "Reminder",
+    "date": "2024-10-08",
+    "audience": [
+      "Change agents",
+      "Security Access Control Officer (SACO)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>As per the email sent to Heads of Human Resources on April 23, 2024, from Annie Champagne, Assistant Deputy Minister, Public Services and Procurement Canada (PSPC) would like to inform you of the importance of data clean-up activities to ensure accuracy of business users pay system access and mitigate potential security issues.</p>\n              </li>\n              <li>\n                <p>This routine process is essential to ensuring that only active employees who legitimately require access to the pay system for their duties possess such privileged access.</p>\n              </li>\n              <li>\n                <p>It is a <abbr title=\"Security Access Control Officer \">SACO</abbr>’s responsibility to monitor pay system access and maintain an accurate list of active authorized users.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information, tools and resources, refer to the <a href=\"https://www.gcpedia.gc.ca/wiki/PhoenixSecurity\">GCpedia Phoenix Security page</a> and <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/comm-eng.html\">GCintranet Compensation hub</a>.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-04-10-communication23": {
+    "id": "24-04-10-communication23",
+    "title": "Final Control Account Balance Report (CABR) for P06 Trial Balance reporting",
+    "category": "For action",
+    "date": "2024-10-04",
+    "audience": [
+      "Change agents",
+      "Finance officers"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform you that an issue occurred with the September (P06) Payroll System General Ledger (PSGL) which impacted the distribution of the final Control Account Balance Report (CABR).</li>\n              <li>As a result, the final <abbr title=\"Control Account Balance Report\">CABR</abbr> did not get distributed to departments for the month of September 2024.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Departments can reach out to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca?subject=September%20P06%20/%20CABR\">PS-GL Production Team</a> if they need more information about the <abbr title=\"Payroll System General Ledger\">PSGL</abbr> or the <abbr title=\"Control Account Balance Report\">CABR</abbr>.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-04-10-communication24": {
+    "id": "24-04-10-communication24",
+    "title": "Changes to the pay processing schedule and YEPE / YEPO schedule in October 2024",
+    "category": "For action",
+    "date": "2024-10-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for the <abbr title=\"Year-end processing previous year\">YEPO</abbr>2022 and to the pay processing calendar in the month of October 2024. The following changes have been made to the schedules:</p>\n          <ul>\n            <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2022 scheduled on October 21, 2024, and the 2022 amended tax slips scheduled on October 23, 2024, has been cancelled.</li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n            <li>\n              <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</p>\n            </li>\n            <li>\n              <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule</a> for detailed information about year-end processing schedules of current and previous years.</p>\n            </li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-01-10-communication25": {
+    "id": "24-01-10-communication25",
+    "title": "Technical upgrade of the pay system scheduled in October 2024 ",
+    "category": "For information",
+    "date": "2024-10-01",
+    "audience": [
+      "Change agents",
+      "Phoenix users"
+    ],
+    "what": "<ul>\n            <li>A technical upgrade to the pay system will take place between Friday, October 18, 2024, and Tuesday, October 22, 2024 (see Notes below). It consists of a migration of pay data to a new database and an upgrade of the PeopleTools development platform. Upgrading these components ensures the pay system remains sustainable and reliable. </li>\n            <li>Following testing activities, it was confirmed that the upgrade will have minimal impact on users. Users may recognize a slight change to how search results display. However, the way they enter search criteria on those pages in the pay system will not change. Affected pay procedures and job aids will be updated with a revised screen capture where applicable following the PeopleTools upgrade.</li>\n            <li>Neither the migration of pay data or the upgrade to PeopleTools will change how the system calculates pay today.</li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>A notice will be distributed the week of October 21, 2024, following implementation, with a list of the affected pay procedures and job aids that have been updated as a result of the PeopleTools upgrade.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-27-09-communication26": {
+    "id": "24-27-09-communication26",
+    "title": "Extension to basic pay and leave without pay transactions in Time and Labour for pay period 21",
+    "category": "For information",
+    "date": "2024-09-27",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers",
+      "Section 34 managers"
+    ],
+    "what": "<ul>\n            <p>\n            </p><li>Public Services and Procurement Canada (PSPC) would like to inform the community that there will be an extension to the approval for basic pay (or equivalent) and leave without pay (LWOP) transactions in Time and Labour.</li>\n            <p>\n            </p><li>The following changes have been made to the transactions for pay period 21:</li>\n            <ul>\n              <p>\n              </p><li>The cut-off for <strong>section 34 managers approval</strong> will be 12:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Wednesday, October 2, 2024.</li>\n              <p>\n              </p><li>The cut-off for <strong>section 33 authorization</strong> will be 4:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Wednesday, October 2, 2024.</li>\n            </ul>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-25-09-communication27": {
+    "id": "24-25-09-communication27",
+    "title": "Changes to the pay processing calendar and the YEPE / YEPO schedule",
+    "category": "For action",
+    "date": "2024-09-25",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has made changes to the pay processing calendar and the <abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule – Year 2024:</p>\n          <ul>\n            <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2018 scheduled for September 25, 2024, has been moved to October 8, 2024.</li>\n            <li>The 2018 amended tax slips will now be available on October 10, 2024.</li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedules</a>&nbsp;for detailed information about all pay-related processes and dates.</li>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing previous year\">YEPO</abbr> schedule</a>&nbsp;for detailed information about year-end processing schedules of current and previous years.</li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-20-09-communication28": {
+    "id": "24-20-09-communication28",
+    "title": "Changes to the pay processing and YEPE / YEPO schedule in November 2024",
+    "category": "For action",
+    "date": "2024-09-20",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for the <abbr title=\"Year-end processing previous year\">YEPO</abbr>2023 and <abbr title=\"Year-end processing previous year\">YEPO</abbr>2019 and to the pay processing calendar in the month of November 2024. The following changes have been made to the schedules: </p>\n          <ul>\n            <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2023 scheduled on November 4, 2024, and the 2023 amended tax slips scheduled on November 6, 2024, has been cancelled.</li>\n            <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2019 scheduled on November 8, 2024, and the 2019 amended tax slips scheduled on November 12, 2024, has been cancelled. </li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedules</a>&nbsp;for detailed information about all pay-related processes and dates.</li>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule</a>&nbsp;for detailed information about year-end processing schedules of current and previous years.</li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-18-09-communication29": {
+    "id": "24-18-09-communication29",
+    "title": "Extended pay system service interruption planned in October",
+    "category": "For information",
+    "date": "2024-09-18",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals"
+    ],
+    "what": "<ul>\n            <p>\n            </p><li>Public Services and Procurement Canada (PSPC) will be migrating to a new pay system database in October 2024.</li>\n            <p>\n            </p><li>During this migration the pay system will not be available to end users starting at 6:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Friday, October 18, 2024, until 8:00 a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Tuesday, October 22, 2024.</li>\n            <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will communicate this again in the week leading up to the actual service interruption as is our regular practice. However, it is important that the compensation community is aware in advance in order to plan their activities, especially due to the impact during business hours on Monday, October 21, 2024.</li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/calendrier-interruptions-schedule/index-eng.html\">Phoenix and Compensation Web Applications service interruption schedule</a> for additional, tentative dates when access to the pay system may be affected.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-13-09-communication30": {
+    "id": "24-13-09-communication30",
+    "title": "Changes to the pay processing calendar for pay period BW2421, BW2422, BW2423, MM2410 and the YEPE / YEPO schedule",
+    "category": "For action",
+    "date": "2024-09-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay period&nbsp;21 (BW2421), 22 (BW2422), 23 (BW2423), monthly pay period&nbsp;10 (MM2410) and the <abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule.</p>\n          <ul>\n            <li>The following change has been made to <strong>BW2421</strong>:\n              <ul>\n                <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, September 27, 2024.</li>\n              </ul>\n            </li>\n            <li>The following changes have been made to <strong>BW2422</strong> and <strong>MM2410</strong>:\n              <ul>\n                <li>The deadline to approve rolled back transactions will be 11:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Thursday, October 17, 2024.</li>\n                <li>The off-cycle #4 and bi-weekly cycle #2 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 10:30&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, October 18, 2024.</li>\n              </ul>\n            </li>\n            <li>The following change has been made to <strong>BW2423</strong>:\n              <ul>\n                <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Monday, October 28, 2024.</li>\n              </ul>\n            </li>\n            <li>The following change has been made to the <abbr title=\"year-end processing current year\">YEPO</abbr> schedule:\n              <ul>\n                <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2015 scheduled for September 27, 2024, has been moved to September 19, 2024.</li>\n                <li>The 2015 amended tax slips will now be available on September 19, 2024.</li>\n              </ul>\n            </li>\n            <li>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 .CSV file) and job lock are outlined in the 2024 pay processing schedule (refer to the Resources section below).</li>\n          </ul>",
+    "action": "<p> <strong>Action required for CAs:</strong></p>\n          <p>Complete E23 one-time payment file (.CSV) bulk entries for pay periods&nbsp;21, 22, 23 and monthly pay period&nbsp;10 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>\n          <p> <strong>Actions required for the Section&nbsp;33 authorizers:</strong></p>\n          <p>Complete payment authorizations for pay periods&nbsp;21, 22, 23 and monthly pay period&nbsp;10 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>",
+    "notes": "",
+    "resources": "<ul>\n            <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</li>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule</a>&nbsp;for detailed information about year-end processing schedules of current and previous years.</li>\n            <li> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows CAs to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-13-09-communication31": {
+    "id": "24-13-09-communication31",
+    "title": "Changes to the pay processing calendar for pay period BW2421, BW2422, BW2423, MM2410 and the YEPE / YEPO schedule",
+    "category": "For action",
+    "date": "2024-09-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay period&nbsp;21 (BW2421), 22 (BW2422), 23 (BW2423), monthly pay period&nbsp;10 (MM2410) and the <abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule.</p>\n          <ul>\n            <li>The following change has been made to <strong>BW2421</strong>:\n              <ul>\n                <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, September 27, 2024.</li>\n              </ul>\n            </li>\n            <li>The following changes have been made to <strong>BW2422</strong> and <strong>MM2410</strong>:\n              <ul>\n                <li>The deadline to approve rolled back transactions will be 11:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Thursday, October 17, 2024.</li>\n                <li>The off-cycle #4 and bi-weekly cycle #2 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 10:30&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, October 18, 2024.</li>\n              </ul>\n            </li>\n            <li>The following change has been made to <strong>BW2423</strong>:\n              <ul>\n                <li>The off-cycle #3 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\">ET</abbr>) to 12:00&nbsp;p.m. (<abbr title=\"eastern time\">ET</abbr>) on Monday, October 28, 2024.</li>\n              </ul>\n            </li>\n            <li>The following change has been made to the <abbr title=\"year-end processing current year\">YEPO</abbr> schedule:\n              <ul>\n                <li>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2015 scheduled for September 27, 2024, has been moved to September 19, 2024.</li>\n                <li>The 2015 amended tax slips will now be available on September 19, 2024.</li>\n              </ul>\n            </li>\n            <li>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 .CSV file) and job lock are outlined in the 2024 pay processing schedule (refer to the Resources section below).</li>\n          </ul>",
+    "action": "<p> <strong>Action required for CAs:</strong></p>\n          <p>Complete E23 one-time payment file (.CSV) bulk entries for pay periods&nbsp;21, 22, 23 and monthly pay period&nbsp;10 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>\n          <p> <strong>Actions required for the Section&nbsp;33 authorizers:</strong></p>\n          <p>Complete payment authorizations for pay periods&nbsp;21, 22, 23 and monthly pay period&nbsp;10 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>",
+    "notes": "",
+    "resources": "<ul>\n            <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</li>\n            <li>Refer to the&nbsp; <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"year-end processing current year\">YEPO</abbr> schedule</a>&nbsp;for detailed information about year-end processing schedules of current and previous years.</li>\n            <li> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows CAs to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-27-08-communication32": {
+    "id": "24-27-08-communication32",
+    "title": "Employees hired at age 65 years or older and eligible for the Supplementary Death Benefit",
+    "category": "Reminder",
+    "date": "2024-08-27",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n            <p>\n            </p><li>Public Services and Procurement Canada (PSPC) would like to remind <abbr title=\"compensation advisors\">CAs</abbr> that different rules apply for enrolment to the Supplementary Death Benefit (SDB) plan when an employee is hired on or after the age of 65 years and is eligible for this benefit.</li>\n            <p>\n            </p><li>Employees in this scenario will not have 2 years of continuous participation in the <abbr title=\"Supplementary Death Benefit\">SDB</abbr> plan. Therefore, the 10% coverage reduction beginning at age 66 would occur before the cost reduction for the $10,000 paid up coverage. However, since the pay system uses 1 plan type for both the coverage reduction and cost reduction, the <abbr title=\"compensation advisor\">CA</abbr> can only enter 1 coverage begin date when creating the employee’s benefit enrolment in the pay system.</li>\n            <li>In these cases, the <abbr title=\"compensation advisor\">CA</abbr> <strong>must</strong> ensure that the <strong>same</strong> coverage begin date entered for plan type 26 (Supplemental Death Benefit) on the employee side is also entered on the employer side for plan type 2T (Supplemental Death ben ER paid).</li>\n          </ul>",
+    "action": "",
+    "notes": "",
+    "resources": " Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/65-prestation-deces-65-death-benefit-eng.html\">Reaching age 65: Changes to supplementary death benefit enrollment</a> job aid to see the different <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/65-prestation-deces-65-death-benefit-eng.html#Scenarios\">Scenarios for employees hired at age of 65 years or older and eligible for <abbr title=\"Supplementary Death Benefit\">SDB</abbr></a>. ",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-19-08-communication33": {
+    "id": "24-19-08-communication33",
+    "title": "Modifications made to sections 2.13.3 and 2.20.2278 of the Insurance Administration Manual",
+    "category": "For information",
+    "date": "2024-08-19",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has updated sections 2.13.3 and 2.20.2278 of the Insurance Administration Manual (IAM) resulting from changes to the Public Service Health Care Plan (PSHCP).</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/guides-manuals/ara-iam/2-13-3-eng.html\">Insurance Administration Manual 2.13.3</a> outlines the procedure for completing and distributing the PWGSC-TPSGC 2278 form.</li>\n              <li>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/guides-manuals/ara-iam/2-20-2278-eng.html\">Insurance Administration Manual 2.20.2278</a> provides detailed instructions for filling out the PWGSC-TPSGC 2278 form. </li>\n              <li>Refer to chapter 2 of the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/guides-manuals/ara-iam/index-eng.html\">Insurance Administration Manual</a> for more information on the Public Service Health Care Plan.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-13-08-communication34": {
+    "id": "24-13-08-communication34",
+    "title": "Late salary change (individual retro) impact on leave cash-outs dated March 31, 2024",
+    "category": "For information",
+    "date": "2024-08-13",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <p>\n              </p><li>Public Services and Procurement Canada (PSPC) would like to advise <abbr title=\"compensation advisors\">CAs</abbr> of an issue impacting mandatory and voluntary leave cash-out transactions with an effective date of March 31, 2024, when a late salary change transaction is entered in the pay system.</li>\n              <p>\n              </p><li>When a late salary change triggers the individual retroactive pay process, the pay system is not performing assessments on mandatory leave cash-outs or generating error messages for voluntary leave cash-outs dated March 31, 2024, due to that date occurring on a non-business day (March 31 occurred on a Sunday in 2024).</li>\n              <li>Until an update is made to the pay system, <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will provide monthly reports to departments and agencies listing pay accounts that should be reviewed to determine if manual intervention and correction is required by the <abbr title=\"compensation advisor\">CA</abbr>.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": " The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/refonte-retroactivite-apercu-retro-redesign-overview-eng.html\">Retro Redesign overview</a> provides information about individual retro (late processing) and what happens in the pay system when a late change in rates of pay occurs. ",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-12-08-communication35": {
+    "id": "24-12-08-communication35",
+    "title": "Decommissioning of print for MyGCPay External users",
+    "category": "For action",
+    "date": "2024-08-12",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <p>\n              </p><li>Public Services and Procurement Canada (PSPC) will begin transitioning from printed to digital pay stubs and tax slips in an effort to reduce print by the spring of 2025.</li>\n              <p>\n              </p><li>Employees registered on MyGCPay External will be progressively removed from the print file as part of this transition. This manual process will be carried out by <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> until an automated solution is implemented.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> is encouraging qualified employees, such as departing employees or those going on leave without pay (LWOP), to register now on the MyGCPay External application to access their pay stubs and tax slips digitally.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": " Visit <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/mapayegc-ext-mygcpay-eng.html?utm_campaign=pspc-spac-mygcpay&amp;utm_medium=vurl&amp;utm_source=canada-ca_mygcpay_cspay\">canada.ca/mygcpay-external</a> to access the application and for more information on eligibility criteria. ",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-19-07-communication36": {
+    "id": "24-19-07-communication36",
+    "title": "Reviewing error log reports for the Public Service Dental Care Plan",
+    "category": "For action",
+    "date": "2024-07-19",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <p>\n              </p><li>On June 29, 2023, The Treasury Board Secretariat of Canada has signed a new contract with Canada Life for the administration of the Public Service Dental Care Plan (PSDCP) which will be implemented on November 1, 2024.</li>\n              <p>\n              </p><li>Effective June 20, 2024, Public Services and Procurement Canada (PSPC) will be required to generate and send a <abbr title=\"Public Service Dental Care Plan\">PSDCP</abbr> eligibility coverage file on a weekly basis to Canada Life.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> has created error log reports to identify member accounts that require corrective action. These error log reports are accessible for <abbr title=\"compensation advisors\">CAs</abbr> through the pay system.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The following job aid describes the error log report and provide guidance on the necessary corrective actions:</p>\n            <ul>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/soins-dentaires-erreurs-phenix-dental-care-pheonix-error-eng.html\">Public Service Dental Care Plan: Phoenix error codes log file report from eligibility weekly file</a></li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-12-07-communication37": {
+    "id": "24-12-07-communication37",
+    "title": "New YEPE / YEPO self-paced training module available in the Pay System Learning Portal",
+    "category": "For information",
+    "date": "2024-07-12",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to advise you that the new <abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"Year-end processing previous year\">YEPO</abbr> self-paced training module is now available on the Pay System Learning Portal (see Resources section below).</li>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s and pay system users will have access to the training as well as additional tools once registered. </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://pspc-spacpabpspc.sabacloud.com/Saba/Web_wdk/CA1PRD0014/index/prelogin.rdf?spfUrl=%2FSaba%2FWeb_spf%2FCA1PRD0014%2Fapp%2Fdashboardhttps%3A%2F%2Fpspc-spacpabpspc.sabacloud.com%2FSaba%2FWeb_wdk%2FCA1PRD0014%2Findex%2Fprelogin.rdf%3FspfUrl%3D%2FSaba%2FWeb_spf%2FCA1PRD0014%2Fapp%2Fdashboard&amp;locale=en_CA\">Pay System Learning Portal</a> to access your account.</li>\n              <li>For support on creating your account, refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/formation-paye-pay-training/pdf/formation-paye-pay-training-eng.pdf\">Pay System Learning Portal User Guide</a> found on the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/formation-paye-pay-training/index-eng.html\">Pay system training</a> page.</li>\n              <li>For training and registration questions, contact the <a href=\"mailto:tpsgc.formationsurphenix-phoenixtraining.pwgsc@tpsgc-pwgsc.gc.ca\">Training team</a>.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-28-06-communication38": {
+    "id": "24-28-06-communication38",
+    "title": "Changes to the pay processing calendar for pay period BW2416 and MM2407",
+    "category": "For action",
+    "date": "2024-06-28",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay period&nbsp;16 (BW2416) and monthly pay period&nbsp;7 (MM2407).</li>\n              <li>The following changes have been made to the&nbsp;BW2416&nbsp;and MM2407 cut-off dates and Section&nbsp;33 window:\n                <ul>\n                  <li>The off-cycle #4 and monthly off-cycle #2 Section&nbsp;33 window will be from 9:00&nbsp;a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) to 10:30&nbsp;a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Friday, July 26, 2024.</li>\n                  <li>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 .CSV file) and job lock are outlined in the 2024 pay processing schedule (refer to the Resources section below).</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</li>\n              <li> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a>&nbsp;allows <abbr title=\"Compensation advisors\">CA</abbr>s&nbsp;to enter transactions for all cycles directly in the pay system, bypassing the requirement to load an E23 one-time payment file.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-26-06-communication39": {
+    "id": "24-26-06-communication39",
+    "title": "New Termination/Retirement Debt Recovery form ",
+    "category": "For action",
+    "date": "2024-06-26",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<ul>\n              <li>Effective immediately, the new Termination/Retirement Debt Recovery (PWGSC‑TPSGC‑4242) form, accessible in the Forms catalogue (see Resources below), is available for use. It replaces the previous Termination&nbsp;/&nbsp;Retirement Information (PWGSC‑TPSGC‑2386) form which should no longer be used.</li>\n              <li>Public Services and Procurement Canada (PSPC) has developed the new form to request collection of the following debts to the Crown that remain after final payments have been issued to the employee:</li>\n              <ul>\n                <li>Salary Overpayments</li>\n                <li>Emergency Salary Advances (ESA)</li>\n                <li>Priority Payments</li>\n                <li>Transition Payments</li>\n                <li>Pension Deficiencies and Arrears</li>\n                <li>Supplemental Death Benefit (<abbr title=\"Supplementary Death Benefit\">SDB</abbr>) deficiencies and arrears</li>\n              </ul>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>The <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/forms/text/recherche-search-eng.html#dataset-filter\">Forms Catalogue</a> provides a filterable inventory of available forms and guidelines for <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/forms/text/optimal-eng.html\">optimal viewing and filling out of PDF forms</a>. The new Termination/Retirement Debt Recovery form can be found by typing “4242” in the search field. Note that the search provides two results:</li>\n              <li>PWGSC‑TPSGC‑4242E for the English version</li>\n              <li>PWGSC‑TPSGC‑4242F for the French version</li>\n              <li>Use the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/formulaire-recouvrement-dettes-cessation-emploi-retraite-termination-Retirement-debt-recovery-form-eng.html\">Termination / Retirement Debt Recovery form</a> procedure to find out about your roles and responsibilities when completing and submitting the form. Completion by both CAs and departmental finance officers ensures that there is agreement on the salary overpayment amount prior to any recovery from a pension benefit payment. </li>\n              <li>The <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/bapr-samb/2024/bapr-samb-2024-002-eng.html\">Superannuation administration manual: Special bulletin 2024-002</a> provides additional information on the use of the new Termination/Retirement Debt Recovery (PWGSC‑TPSGC‑4242) form and the roles and responsibilities of the Receiver General for Canada and client departments and agencies regarding debt recovery.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-25-06-communication40": {
+    "id": "24-25-06-communication40",
+    "title": "Extended pay system service interruption planned in July ",
+    "category": "For information",
+    "date": "2024-06-25",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals"
+    ],
+    "what": "<ul>\n              <li> Public Services and Procurement Canada (PSPC) will be performing a technical walkthrough of go-live activities at the end of July 2024 for the pay system database migration that is scheduled for implementation in the fall of 2024. </li>\n              <li> During this activity, the pay system will not be available to end users starting at 6:00 p.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, July 26, 2024, until 8:00 a.m. (<abbr title=\"eastern time\">ET</abbr>) on Tuesday, July 30, 2024. </li>\n              <li> <abbr title=\"Public Services and Procurement Canada \">PSPC</abbr> will communicate this again in the week leading up to the actual service interruption as is our regular practice. However, it is important that the compensation community is aware in advance in order to plan their activities, especially due to the impact during business hours on Monday, July 29, 2024. </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": " Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/calendrier-interruptions-schedule/index-eng.html\">Phoenix and Compensation Web Applications service interruption schedule</a> for additional, tentative dates when access to the pay system may be affected",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-17-06-communication41": {
+    "id": "24-17-06-communication41",
+    "title": "New leave without pay codes for parental, extended parental and caregiving reasons",
+    "category": "For information",
+    "date": "2024-06-17",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) has added five new leave without pay (LWOP) codes in the pay system as a result of changes made to the Public Service Superannuation Regulations (PSSR) for the purposes of parental and caregiving periods of leave. </p>\n              </li>\n              <li>\n                <p>The new codes are for administrative purposes to differentiate between single rate (employee share) and double rate (employee and employer share) pension contributions, if eligible and opted for by the employee as pensionable service, and are as follows:</p>\n                <ul>\n                  <li>\n                    <p>PS: Std Parental &lt;52 weeks</p>\n                  </li>\n                  <li>\n                    <p>PE: Ext Parental &gt;52 &lt;78 weeks</p>\n                  </li>\n                  <li>\n                    <p>CP: 26 wks compassionate care ben</p>\n                  </li>\n                  <li>\n                    <p>CC: 35 wks fam care ben – children</p>\n                  </li>\n                  <li>\n                    <p>CA: 15 wks fam care ben – adults</p>\n                  </li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "<ul>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s must continue to review the applicable collective agreement or Terms and Conditions of Employment to confirm whether an employee is eligible for these types of <abbr title=\"leave without pay\">LWOP</abbr>.</li>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s must use the new codes for <abbr title=\"leave without pay\">LWOP</abbr> with an effective date of June 15, 2024, including for those future-dated entries which must be reviewed and corrected in Job Data as applicable. Any entries with effective dates prior to June 15, 2024, should continue to use the previous codes and should not be updated with the new codes.</li>\n              <li><abbr title=\"Compensation advisors\">CA</abbr>s should refer to the new procedure (see Resources section) for an overview and use of the new codes in the pay system.</li>\n            </ul>",
+    "notes": "",
+    "resources": "<ul>\n              <li>More information on the <a href=\"https://www.canada.ca/en/treasury-board-secretariat/services/information-notice/changes-leave-without-pay-codes-parental-extended-parental-caregiving-leave.html\">Changes to Leave Without Pay Codes for Parental, Extended Parental, and Caregiving Leave</a> is available in the Human Resources Information Notice (HRIB) dated March 7, 2024. </li>\n              <li> Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/apercu-traitement-conge-parental-proches-processing-parental-caregiving-leave-eng.html\">Processing Maternity, Parental, and Caregiving Leave Overview</a> to know when and how to use the new LWOP codes, and to see example scenarios that help explain entries in the pay system. </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-07-06-communication42": {
+    "id": "24-07-06-communication42",
+    "title": "Changes to the pay processing schedule for pay period BW2413 and MM2406",
+    "category": "For action",
+    "date": "2024-06-07",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for bi-weekly pay period 13 (BW2413) and monthly pay period 6 (MM2406).</li>\n              <li>The following changes have been made to the BW2413 and MM2406 cut-off dates and Section 33 window:\n                <ul>\n                  <li>The bi-weekly off-cycle #3 and monthly off-cycle #2 Section 33 window will be from 9:00 a.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) to 12:00 p.m. (<abbr title=\"eastern time\"><abbr title=\"eastern time\">ET</abbr></abbr>) on Monday, June 10, 2024.</li>\n                  <li>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 CSV file), manage allowance and job lock are outlined in the 2024 pay processing schedule (refer to the Resources section below).</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "<p><b>Actions required for <abbr title=\"Compensation advisors\">CA</abbr>s:</b></p>\n            <p>Complete E23 one-time payment file (.CSV) bulk entries for pay period 13 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>\n            <p><b>Actions required for the Section 33 authorizers:</b></p>\n            <p>Complete payment approvals for bi-weekly pay period 13 and monthly pay period 6 by the on-cycle and off-cycle cut-offs provided in the 2024 pay processing schedule.</p>",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows the <abbr title=\"Compensation advisors\">CA</abbr> to enter transactions for all cycles directly in Phoenix, bypassing the requirement to load an E23 one-time payment file.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-03-06-communication43": {
+    "id": "24-03-06-communication43",
+    "title": "Reminder not to uncheck the suppress print box when completing pay actions in the pay system ",
+    "category": "For action",
+    "date": "2024-06-03",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to remind <abbr title=\"Compensation advisors\">CA</abbr>s not to uncheck the suppress print box when completing pay actions such as leave without pay (LWOP), Pending Y, maternity leave, end of term or resignation/retirement.</li>\n              <li>In some cases, when an employee returns from leave, certain <abbr title=\"Compensation advisors\">CA</abbr>s forget to check the suppress print box resulting in the employee continuing to receive printed pay stubs and tax slips. </li>\n              <li>As <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> is moving towards decommissioning print, it is crucial to ensure that <abbr title=\"Compensation advisors\">CA</abbr>s are not including active employees in print files.</li>\n            </ul>",
+    "action": "<p><b>Do not remove</b> the check mark in the suppress print box when completing pay actions in the system. The system will automatically send all pay actions to the print files/MyGCPay, as it is based on an employee’s HR Status. </p>\n            <p> The check mark should only be removed for the following exceptions:</p>\n            <ul>\n              <li>Active – but do not have access to VPN </li>\n              <li>Active – but do not have a Mykey</li>\n            </ul>",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-03-06-communication44": {
+    "id": "24-03-06-communication44",
+    "title": "Modifications made to sections 4.2 and 4.8 of the Insurance Administration Manual ",
+    "category": "For information",
+    "date": "2024-06-03",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has made modifications to the Public Service Management Insurance Plan (PSMIP) in sections 4.2 and 4.8 of the Insurance Administration Manual.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to Chapter 4 of the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/guides-manuals/ara-iam/index-eng.html\">Insurance Administration Manual</a> for more information on the Public Service Management Insurance Plan.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-30-05-communication45": {
+    "id": "24-30-05-communication45",
+    "title": "Changes to the leave without pay codes for parental, extended parental and caregiving leaves information session",
+    "category": "For action",
+    "date": "2024-05-30",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) will be hosting information sessions for <abbr title=\"Compensation advisors\">CA</abbr>s on the changes to leave without pay (LWOP) codes for parental, extended parental and caregiving leave.</li>\n              <li>The sessions will be held at:\n                <ul>\n                  <li>9:30 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 12, 2024, in French</li>\n                  <li>1:30 p.m. (<abbr title=\"eastern time\">ET</abbr>) on June 12, 2024, in English</li>\n                  <li>9:30 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 13, 2024, in French</li>\n                  <li>11:00 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 13, 2024, in English</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "<p><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> encourages <abbr title=\"Compensation advisors\">CA</abbr>s to attend this helpful information session.</p>",
+    "notes": "",
+    "resources": "<p><b>Registration:</b></p>\n            <ul>\n              <li><a href=\"https://events.teams.microsoft.com/event/9d625288-d79c-4c20-9a31-5f0ef01b6ca0@e0d54a3c-7bbe-4a64-9d46-f9f84a41c833\">Registration</a> for the session at 9:30 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 12, 2024, in French</li>\n              <li><a href=\"https://events.teams.microsoft.com/event/a89fe92c-2ae4-4d98-8a20-b0967457572d@e0d54a3c-7bbe-4a64-9d46-f9f84a41c833\">Registration</a> for the session at 1:30 p.m. (<abbr title=\"eastern time\">ET</abbr>) on June 12, 2024, in English</li>\n              <li><a href=\"https://events.teams.microsoft.com/event/19d56e70-4490-42f5-8f08-6756570f4e20@e0d54a3c-7bbe-4a64-9d46-f9f84a41c833\">Registration</a> for the session at 9:30 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 13, 2024, in French</li>\n              <li><a href=\"https://events.teams.microsoft.com/event/0784334b-4e67-4f7b-b8cd-9a009d62b327@e0d54a3c-7bbe-4a64-9d46-f9f84a41c833\">Registration</a> for the session at 11:00 a.m. (<abbr title=\"eastern time\">ET</abbr>) on June 13, 2024, in English</li>\n              <li>Should you have questions for registrations, please contact <a href=\"mailto:tpsgc.formationsurphenix-phoenixtraining.pwgsc@tpsgc-pwgsc.gc.ca\">tpsgc.formationsurphenix-phoenixtraining.pwgsc@tpsgc-pwgsc.gc.ca</a></li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-27-05-communication46": {
+    "id": "24-27-05-communication46",
+    "title": "Extension to basic pay and leave without pay (LWOP) transactions in Time and Labour",
+    "category": "For information",
+    "date": "2024-05-27",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers",
+      "Section 34 managers",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to advise the community that there will be an extension to the input and approval for basic pay (or equivalent) and leave without pay (LWOP) transactions in Time and Labour due to the access issues experienced by users on Friday, May 24, 2024. </li>\n              <li>The following changes for employees have been made to the transactions for pay period 12:\n                <ul>\n                  <li>The cut-off for <b>input</b> will be 4:00 p.m. (<abbr title=\"eastern time\">ET</abbr>) on Tuesday, May 28, 2024.</li>\n                </ul>\n              </li>\n              <li>The following changes for section 34 managers have been made to the transactions for pay period 12:\n                <ul>\n                  <li>The cut-off for <b>approval</b> will be 12:00 p.m. (<abbr title=\"eastern time\">ET</abbr>) on Wednesday, May 29, 2024.</li>\n                </ul>\n              </li>\n              <li>The following changes for section 33 authorizers have been made to the transactions for pay period 12:\n                <ul>\n                  <li>The cut-off for <b>authorization</b> will be 6:00 p.m. (<abbr title=\"eastern time\">ET</abbr>) on Wednesday, May 29, 2024.</li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/2024-eng.html\">Pay processing schedule</a> for detailed information about all pay-related processes and dates.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-07-05-communication47": {
+    "id": "24-07-05-communication47",
+    "title": "Reviewing error reports for the Public Service Health Care Plan",
+    "category": "For action/reminder",
+    "date": "2024-05-07",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>As previously <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/technique-technical/index-eng.html#07-04-23-attachment1-modal\">communicated</a>, Public Services and Procurement Canada (PSPC) has been sending the Public Service Health Care Plan (PSHCP) eligibility file to the Canada Life Assurance Company on a weekly basis since July 4, 2023.</p>\n              </li>\n              <li>\n                <p>Upon receipt of the <abbr title=\"Public Service Health Care Plan\">PSHCP</abbr> eligibility file, Canada Life returns an error report to departments via the Managed Secure File Transfer (MSFT) listing the accounts that received a reject error or warning error.</p>\n              </li>\n              <li>In a separate process, prior to submitting coverage information to Canada Life, the pay system generates an error log file for cases that cannot be transmitted to Canada Life due to data discrepancies.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The following job aids describe the error codes and provide guidance on the necessary corrective actions:</p>\n            <ul>\n              <li>\n                <p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/correctives-rapports-erreurs-error-reports-corrective-eng.html\">The Public Service Health Care Plan Canada Life error reports and corrective actions for Phoenix</a></p>\n              </li>\n              <li>\n                <p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/rapports-erreurs-correctives-corrective-error-reports-eng.html\">The Public Service Health Care Plan Canada Life error reports and correction actions for Compensation Web Applications</a></p>\n              </li>\n              <li><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/erreurs-regime-soins-sante-heath-care-plan-errors-eng.html\">Public Service Health Care Plan: Data errors in log file</a></li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-07-05-communication48": {
+    "id": "24-07-05-communication48",
+    "title": "New statutory deduction codes for Canada Pension Plan and Québec Pension Plan contributions",
+    "category": "For information",
+    "date": "2024-05-07",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) would like to remind you of the enhancements made to the Canada Pension Plan (CPP) and the Québec Pension Plan (QPP) that came into effect in 2024. Deductions for contributions to the second additional component of these plans will display under a new code on the employee’s paycheque.</p>\n              </li>\n              <li>\n                <p>To account for the higher contribution rate and earnings limit that was introduced by the second additional component for both plans, <abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> has added new statutory deduction codes to the pay system for <abbr title=\"Canada Pension Plan\">CPP</abbr> and <abbr title=\"Québec Pension Plan\">QPP</abbr> (for employees working in Québec):\n                </p><ul>\n                  <li>CP2 – <abbr title=\"Canada Pension Plan\">CPP</abbr> second additional employee contributions, or</li>\n                  <li>QP2 – <abbr title=\"Québec Pension Plan\">QPP</abbr> second additional employee contributions.</li>\n                </ul>\n              </li>\n              <li>\n                <p>Once employees reach the annual earnings limit for the first component, deductions for <abbr title=\"Canada Pension Plan\">CPP</abbr> and <abbr title=\"Québec Pension Plan\">QPP</abbr> contributions will stop under codes <abbr title=\"Canada Pension Plan\">CPP</abbr> and <abbr title=\"Québec Pension Plan\">QPP</abbr>. Thereafter, deductions will start under codes CP2 and QP2 and continue until employees reach the annual earnings limit for the second component. More information on rates and limits can be found on Canada.ca or retraitequebec.gouv.qc.ca (see resources section for links).</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>\n                <p><abbr title=\"Compensation advisors\">CAs</abbr> can refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/phenix-modifications-phoenix-eng.html\">modifications applied to the Phoenix pay system</a> for more information on Change Request (CR) 12595 released on February 24, 2024.</p>\n              </li>\n              <li>\n                <p>More information on the enhancements made to the <abbr title=\"Canada Pension Plan\">CPP</abbr> and <abbr title=\"Québec Pension Plan\">QPP</abbr>, including rates and earnings limits, can be found on the following webpages:\n                </p><ul>\n                  <li><a href=\"https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-enhancement.html\">Canada Pension Plan (CPP) and the CPP enhancement</a></li>\n                  <li><a href=\"https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/Pages/bonification-du-rrq.aspx\">Enhancement of the Québec Pension Plan</a></li>\n                  <li><a href=\"https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html\">Second additional CPP contribution (CPP2) rates and maximums</a></li>\n                  <li><a href=\"https://www.rrq.gouv.qc.ca/en/programmes/regime_rentes/travail_cotisations/Pages/revenus-de-travail-admissibles-et-cotisations.aspx\">Pensionable earnings and contributions Québec Pension Plan</a></li>\n                </ul>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-24-04-communication49": {
+    "id": "24-24-04-communication49",
+    "title": "Managing pay system access",
+    "category": "For action",
+    "date": "2024-04-24",
+    "audience": [
+      "Change agents",
+      "Security Access Control Officer (SACO)"
+    ],
+    "what": "<ul>\n              <li>As per the email sent to Heads of Human Resources on April 23, 2024, from Annie Champagne, Assistant Deputy Minister, Public Services and Procurement Canada (PSPC) would like to inform you of the importance of data clean-up activities to ensure accuracy of business users pay system access and mitigate potential security issues.</li>\n              <li>This routine process is essential to ensuring that only active employees who legitimately require access to the pay system for their duties possess such privileged access.</li>\n              <li>It is a SACO’s responsibility to monitor pay system access and maintain an accurate list of active authorized users.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information, tools and resources, refer to the <a href=\"https://www.gcpedia.gc.ca/wiki/PhoenixSecurity\">GCpedia Phoenix Security page</a> and <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/comm-eng.html\">GCintranet Compensation hub</a>. </p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-17-04-communication50": {
+    "id": "24-17-04-communication50",
+    "title": "New introduction to pension level 2 training module available in the Pay System Learning Portal",
+    "category": "For information",
+    "date": "2024-04-17",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) would like to inform you that the new introduction to pension, Level 2 training module, is open for registration in the Pay System Learning Portal (see Resources section below). The course will launch on May 27, 2024.</li>\n              <li><abbr title=\"compensation advisors\">CAs</abbr> and pay system users will have access to the upcoming training, material and the participant’s manual, as well as additional tools once registered.</li>\n              <li><abbr title=\"compensation advisors\">CAs</abbr> and pay system users can now register for the course.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://pspc-spacpabpspc.sabacloud.com/Saba/Web_wdk/CA1PRD0014/index/prelogin.rdf?spfUrl=%2FSaba%2FWeb_spf%2FCA1PRD0014%2Fapp%2Fdashboardhttps%3A%2F%2Fpspc-spacpabpspc.sabacloud.com%2FSaba%2FWeb_wdk%2FCA1PRD0014%2Findex%2Fprelogin.rdf%3FspfUrl%3D%2FSaba%2FWeb_spf%2FCA1PRD0014%2Fapp%2Fdashboard&amp;locale=fr_CA\">Pay System Learning Portal</a> to access your account.</li>\n              <li>For support on creating your account, refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/formation-paye-pay-training/pdf/formation-paye-pay-training-eng.pdf\">Pay System Learning Portal User Guide</a> found on the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/formation-paye-pay-training/index-eng.html\">Pay system training</a> page.</li>\n              <li>For training and registration questions, contact the <a href=\"mailto:tpsgc.formationsurphenix-phoenixtraining.pwgsc@tpsgc-pwgsc.gc.ca\">Training team</a>.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-17-04-communication51": {
+    "id": "24-17-04-communication51",
+    "title": "Reminder regarding the British Columbia Medical Services Plan ",
+    "category": "Reminder",
+    "date": "2024-04-17",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>As previously <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/gc/rem/communications/technique-technical/index-eng.html#10-31-22-attachment2-modal\">communicated</a> on October 31, 2022, Public Services and Procurement Canada (PSPC) would like to remind compensation advisors (CAs) to not take any action relating to the British Columbia Medical Services Plan in the pay system.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> noticed that <abbr title=\"compensation advisors\">CAs</abbr> are continuing to take action relating to the plan despite the restrictions in place.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> is currently running a validation exercise on these accounts and any transactions entered under this code during this exercise will cause issues on employee accounts.</li>\n              <li><abbr title=\"Public Services and Procurement Canada\">PSPC</abbr> will not be able to remove the code until the scheduled work has been completed in December 2024.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-11-04-communication52": {
+    "id": "24-11-04-communication52",
+    "title": "New codes for uncollectible debts to the Crown",
+    "category": "For action",
+    "date": "2024-04-11",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<ul>\n              <li>As of March 23, 2024, Public Services and Procurement Canada (PSPC) has implemented new deduction codes in the pay system to capture amounts for a debt to the crown that is outstanding and deemed uncollectible, while pending debt write-off approval.</li>\n              <li>The new codes are to be used by <abbr title=\"compensation advisors\">CAs</abbr> once they have determined that an outstanding overpayment on an employee’s account is uncollectible due to either statute of limitations or identification of bankruptcy/consumer proposal.</li>\n              <li>The codes will place outstanding overpayment amounts in suspense in the pay system, ensuring they are not linked to any other pay processes, thus eliminating the risk of inadvertent recovery of these amounts.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/traiter-creances-irrecouvrables-etat-processing-uncollectible-debts-crown-eng.html\">Processing Uncollectible Debts to the Crown</a> procedure for instructions on how to remove uncollectible amounts from pay processing by manually placing the amounts in suspense while pending debt write-off approval.</li>\n              <li>Refer to the <a href=\"https://www.gcpedia.gc.ca/wiki/Overpayment_letters_for_Compensation_Advisors\">Overpayment letters</a> for <abbr title=\"compensation advisors\">CAs</abbr> page on GCpedia for the updated letter templates to employees detailing their overpayment and recovery options.</li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-27-03-communication53": {
+    "id": "24-27-03-communication53",
+    "title": "Changes to the YEPE / YEPO schedule – Year 2024 ",
+    "category": "For action",
+    "date": "2024-03-27",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has made changes to the pay run ID for the 2022 <abbr title=\"Year-end processing previous year\">YEPO</abbr> for the months of March to December 2024.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/2024-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr> / <abbr title=\"Year-end processing previous year\">YEPO</abbr> schedule</a> for detailed information about year-end processing schedules for current and previous years.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-25-03-communication54": {
+    "id": "24-25-03-communication54",
+    "title": "New Automated Benefit Enrollment",
+    "category": "For action",
+    "date": "2024-03-25",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) has implemented, on March 23, 2024, a new automated benefit enrollment process for certain employees.</p>\n              </li>\n              <li>\n                <p>This new process automates enrollments for new hires in indeterminate positions or term positions greater than six months.</p>\n              </li>\n              <li>\n                <p>This automation applies to the following benefit plans:</p>\n              </li>\n              <ul>\n                <li>Public Service Health Care Plan (PSHCP) – Waive (exception: <abbr title=\"Public Service Health Care Plan\">PSHCP</abbr> coverage election for employees whose benefits are not entirely paid by the employer will be set to waive in the pay system)</li>\n                <li>Public Service Dental Care Plan (PSDCP)</li>\n                <li>Disability Insurance (DI)</li>\n                <li>Long Term Disability (LTD) Insurance</li>\n                <li>Public Service Management Insurance Plan (PSMIP) <strong>only</strong> for employees whose benefits are paid by the employer</li>\n                <li>Supplementary Death Benefit (SDB)</li>\n                <li>Public Service Pension Plans – CAN Pension</li>\n              </ul>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>\n                <p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/inscription-automatique-avantages-sociaux-automation-enrollment-benefits-eng.html\">Automation of benefits phase 1: New hire</a> procedure provides support to <abbr title=\"compensation advisors\">CAs</abbr> for scenarios where the benefit plans fall outside of the scope of automation.</p>\n              </li>\n              <li>\n                <p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/guides-manuals/ara-iam/index-eng.html\">Insurance Administration Manual (IAM)</a> provides <abbr title=\"compensation advisors\">CAs</abbr> with detailed information about the administration of public service insurance plans.</p>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-21-03-communication55": {
+    "id": "24-21-03-communication55",
+    "title": "Changes to important dates regarding the reversal and cancellation process",
+    "category": "Update",
+    "date": "2024-03-21",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<p>Due to required changes, the fiscal year-end 2023-2024 dates have been amended. Reversals in the Standard Payment System (SPS) and the cancellation of payments in the pay system have not been processed since <strong>March 14, 2024</strong>.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information about the reversal and cancellation process, send your questions to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca\">Financial and Payroll Accounting Division (FPAD)</a>. </p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-08-03-communication56": {
+    "id": "24-08-03-communication56",
+    "title": "Changes to the pay processing schedule for pay period BW2407 and MM2403",
+    "category": "For action",
+    "date": "2024-03-08",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Section 33 authorizers"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) would like to inform users of the schedule changes for pay period 7 (BW2407) and monthly period 3 (MM2403).</p>\n              </li>\n              <li>\n                <p>The following changes have been made to the BW2407 cut-off dates and Section 33 window:</p>\n                <ul>\n                  <li>\n                    <p>The off-cycle #3 and monthly off-cycle #2 Section 33 window will be from 9:00 a.m. (<abbr title=\"eastern time\">ET</abbr>) to 12:00 p.m. (<abbr title=\"eastern time\">ET</abbr>) on Friday, March 15, 2024.</p>\n                  </li>\n                  <li>\n                    <p>Cut-off dates for the Create Pay Transactions, one-time payment files (E23 CSV file), manage allowance and job lock are outlined in the 2024 pay processing schedule (refer to the Resources section below).</p>\n                  </li>\n                  <li>\n                    <p>The <abbr title=\"Year-end processing previous year\">YEPO</abbr>2023 that was scheduled for March 21, 2024, has been removed.</p>\n                  </li>\n                </ul>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>\n                <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedules</a> for detailed information about all pay-related processes and dates.</p>\n              </li>\n              <li>\n                <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\"><abbr title=\"Year-end processing current year\">YEPE</abbr>/<abbr title=\"Year-end processing previous year\">YEPO</abbr> schedule</a> for detailed information about year-end processing schedules of current and previous years.</p>\n              </li>\n              <li>\n                <p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/procedures/outil-creation-paysheet-creation-eng.html\">Paysheet creation tool (E129 Create Pay Transactions)</a> allows the CA to enter transactions for all cycles directly in Phoenix, bypassing the requirement to load an E23 one-time payment file.</p>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-04-03-communication57": {
+    "id": "24-04-03-communication57",
+    "title": "Important information for employees about 2023 tax slips and tax filing",
+    "category": "For action",
+    "date": "2024-03-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) has completed issuing the 2023 tax slips to employees. </li>\n              <li>Amended 2023 tax slips may be issued should certain types of corrections be made. Therefore, it is important for employees to continue to verify their account for any amended tax slips prior to filing their tax return by the April 30, 2024, deadline.</li>\n              <li>Employees with access to a Government of Canada network can retrieve their electronic 2023 tax slips using Phoenix pay system and MyGCPay – Pay Web Application.</li>\n              <li>Former employees and employees on leave can retrieve their amended slips using <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/mapayegc-ext-mygcpay-eng.html\">MyGCPay external access</a>. </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>The <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-periode-declaration-tax-season-tools-eng.html\">tax season toolbox</a> page on GCintranet provides information on tax season and year begin activities.</p>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-04-03-communication58": {
+    "id": "24-04-03-communication58",
+    "title": "Important dates regarding the reversal and cancellation process",
+    "category": "For information",
+    "date": "2024-03-04",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "As a result of fiscal year-end 2023-2024 requirements, the final date to action reversals in the Standard Payment System (SPS) and to process the cancellation of payments in the pay system is March 22, 2024.",
+    "action": "",
+    "notes": "",
+    "resources": "For more information about the reversal and cancellation process, send your questions to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca\">Financial and Payroll Accounting Division (FPAD)</a>.",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-23-02-communication59": {
+    "id": "24-23-02-communication59",
+    "title": "Changes to the YEPOs scheduled for February and March",
+    "category": "For action",
+    "date": "2024-02-23",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)"
+    ],
+    "what": "<p>Public Services and Procurement Canada (PSPC) has made the following changes to the Payroll processing schedule and the <abbr title=\"Year-end processing current year\">YEPE</abbr>/<abbr title=\"Year-end processing previous year\">YEPO</abbr> schedule:</p>\n            <ul>\n              <li>\n                <p>A <abbr title=\"Year-end processing previous year\">YEPO</abbr> 2016 was added on February 28, 2024</p>\n              </li>\n              <li>\n                <p>The <abbr title=\"Year-end processing previous year\">YEPO</abbr> 2021 scheduled on March 13, 2024, was moved to March 26, 2024</p>\n              </li>\n              <li>\n                <p>The <abbr title=\"Year-end processing previous year\">YEPO</abbr> 2023 scheduled on March 14, 2024, was moved to March 13, 2024</p>\n              </li>\n              <li>\n                <p>The amended tax slip schedule was also modified to reflect the dates on which the amended slips will be issued for those <abbr title=\"Year-end processing previous year\">YEPO</abbr>s</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>\n                <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-schedule/index-eng.html\">Pay processing schedules and pay period calendars</a> for detailed information about all pay-related processes and dates.</p>\n              </li>\n              <li>\n                <p>Refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/calendrier-yepe-yepo-schedule/index-eng.html\">Phoenix <abbr title=\"Year-end processing current year\">YEPE</abbr>/<abbr title=\"Year-end processing previous year\">YEPO</abbr> schedule</a> for detailed information about year-end processing schedules of current and previous years.</p>\n              </li>\n              <li>\n                <p>Refer to the <a href=\"http://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/communications/calendrier-modifications-feuillets-renseignements-fiscaux-tax-slips-amendments-schedule-eng.html\">Tax slips amendments schedule for employees</a> for detailed information on when amended tax slips will be available.</p>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-05-02-communication60": {
+    "id": "24-05-02-communication60",
+    "title": "Qualifying Retroactive Lump-Sum Payment (QRLSP) forms accessible online",
+    "category": "For information",
+    "date": "2024-02-05",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>\n                <p>Public Services and Procurement Canada (PSPC) will start providing the T1198 Statement of Qualifying Retroactive Lump-Sum Payment form and the TP-766.2-V Averaging of a Retroactive Payment, Support-Payment Arrears or a Repayment of Support form (applicable to Quebec residents) electronically for qualifying retroactive lump-sum payments (QRLSP) issued by the pay system. </p>\n              </li>\n              <li>\n                <p>The T1198 and TP-766.2-V forms will now be issued as part of the regular tax season activities. Therefore, effective for <abbr title=\"qualifying retroactive lump-sum payments\">QRLSPs</abbr> issued in 2023, these forms will be accessible online in the pay system <strong>as per the staggered approach using the department access schedule (refer to Resources section below).</strong></p>\n              </li>\n              <li>\n                <p>New pages have been added to Phoenix for employees and <abbr title=\"Compensation advisors\">CAs</abbr> to view <abbr title=\"qualifying retroactive lump-sum payments\">QRLSP</abbr> slips using the following menu paths:</p>\n              </li>\n              <ul>\n                <li>\n                  <p>Employees can access the online forms by following menu path: Main Menu &gt; Self Service &gt; Payroll and Compensation &gt; and form TP-766.2-V or form T1198 can be selected.</p>\n                </li>\n                <li>\n                  <p><abbr title=\"Compensation advisors\">CAs</abbr> can access the online forms by following menu path: Main Menu &gt; Payroll for North America &gt; Year-End Processing CAN &gt; Create Slip Data &gt; and form TP-766.2-V or form T1198 can be selected.</p>\n                </li>\n              </ul>\n              <li>\n                <p>In cases where an employee did not receive a qualifying payment, no form will be available for viewing.</p>\n              </li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n            <li>\n              <p>Find more information about <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/systeme-paye-employes-pay-system-employees/feuillet-impot-tax-slip-eng.html#qualifying\">Qualifying Retroactive Lump-Sum Payments</a>.</p>\n            </li>\n            <li>\n              <p><strong>For more information on how and when to access these forms, visit the <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/systeme-paye-employes-pay-system-employees/calendrier-impots-taxes-rollout-eng.html\">department access schedule for 2023 tax slips</a></strong>.</p>\n            </li>\n          </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-02-02-communication61": {
+    "id": "24-02-02-communication61",
+    "title": "Department access schedule for 2023 tax slips",
+    "category": "For action",
+    "date": "2024-02-02",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Human Resources (HR) professionals",
+      "Employees"
+    ],
+    "what": "<ul>\n              <li>Public Services and Procurement Canada (PSPC) will begin issuing the 2023 tax slips to employees on February 21, 2024. </li>\n              <li>2023 tax slips in Phoenix Self Service, MyGCPay and MyGCPay external will be available to employees according to the department access schedule (see the Resources section below).</li>\n              <li>Employees using online access to retrieve their 2023 tax slips can only do so as of the date scheduled for their department or agency.</li>\n              <li>This staggered approach by department has proven successful over the years and ensures an efficient roll-out of tax slips to employees and reduces the risk of potential congestion on our systems.</li>\n              <li>Employees who have registered for <em>MyAccount</em> with Canada Revenue Agency or Revenu Québec will be able to access their 2023 tax information through <em>MyAccount</em> by March 1, 2024.</li>\n            </ul>",
+    "action": "",
+    "notes": "",
+    "resources": "<ul>\n              <li>\n                <p>For information on how and when to access 2023 tax slips, visit:</p>\n                <ul>\n                  <li>\n                    <p><a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/systeme-paye-employes-pay-system-employees/feuillet-impot-tax-slip-eng.html\">Accessing and managing your tax slips</a></p>\n                  </li>\n                  <li>\n                    <p><a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/systeme-paye-employes-pay-system-employees/calendrier-impots-taxes-rollout-eng.html\">Department access schedule for 2023 tax slips</a></p>\n                  </li>\n                </ul>\n              </li><li>\n                <p>For additional resources to help navigate tax season, refer to the <a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/outils-periode-declaration-tax-season-tools-eng.html\">tax season toolbox.</a></p>\n              </li>\n              <li>\n                <p>Read about <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/paye-talon-stub-pay-eng.html\">how public service pay works</a> for general information about pay and tax slips and <a href=\"https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-information-pay/lire-paye-talon-read-pay-stub-eng.html#YTD\">how to compare year-to-date amounts on a pay stub with tax slips.</a></p>\n              </li>\n            </ul>",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  },
+  "24-26-01-communication62": {
+    "id": "24-26-01-communication62",
+    "title": "Important dates regarding the reversal and cancellation process",
+    "category": "For information",
+    "date": "2024-01-26",
+    "audience": [
+      "Change agents",
+      "Compensation advisors (CAs)",
+      "Finance officers"
+    ],
+    "what": "<p>As a result of year-end processing requirements for the 2023 tax season, the final date to action reversals in the Standard Payment System (SPS) and to process the cancellation of payments in the pay system is January 31, 2024.</p>",
+    "action": "",
+    "notes": "",
+    "resources": "<p>For more information about the reversal and cancellation process, send your questions to the <a href=\"mailto:TPSGC.GLSP079-PSGL079.PWGSC@tpsgc-pwgsc.gc.ca\">Financial and Payroll Accounting Division (FPAD)</a>.</p>\n        ",
+    "who": "<p><a href=\"https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/soutien-support-eng.html\">Who to contact for pay system support</a></p>"
+  }
+
   }
 }
